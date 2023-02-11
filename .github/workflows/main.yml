@@ -9,6 +9,8 @@ on:
 jobs:
   my_job:
     name: push details to dev.to
+    permissions:
+      contents: write
     runs-on: ubuntu-latest # ubuntu costs half the price of windows
 
     steps:
