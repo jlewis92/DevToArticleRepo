@@ -3,7 +3,7 @@ title: Pushing to dev.to using GitHub and setup
 published: false
 description: An article used to test pushing to dev.to
 tags: 'productivity, beginners, test, github'
-cover_image: ./assets/github-octocat.jpg
+cover_image: ./assets/github-octocat.png
 canonical_url: null
 ---
 
