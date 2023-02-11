@@ -21,4 +21,4 @@ jobs:
         files: 'markdown/**/*.md'
         branch: main
         conventional_commits: true
-        dry_run: true
+        dry_run: false
