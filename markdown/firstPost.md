@@ -5,6 +5,7 @@ description: An article used to test pushing to Dev.to
 tags: 'productivity, beginners, test, github'
 cover_image: ./assets/github-octocat.png
 canonical_url: null
+id: 1361493
 ---
 
 This article is mainly around so that I can rmemember my current setup and maybe it'll help you be more productive but it's essentially a guid on how to setup vscode and GitHub to be able to post to Dev.to
