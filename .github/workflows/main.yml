@@ -10,7 +10,7 @@ jobs:
   my_job:
     name: push details to dev.to
     permissions:
-      contents: write
+      contents: write # this lets the bot update the post in github
     runs-on: ubuntu-latest # ubuntu costs half the price of windows
 
     steps:
