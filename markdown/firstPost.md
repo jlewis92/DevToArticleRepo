@@ -1,6 +1,6 @@
 ---
 title: My setup for publishing to Dev.to using github
-published: false
+published: true
 description: An article used to test pushing to Dev.to
 tags: 'productivity, beginners, test, github'
 cover_image: ./assets/github-octocat.png
@@ -98,7 +98,7 @@ Once this is done, I'm ready to start editing the markdown. By default, Dev.to a
 
 ---
 title: Pushing to Dev.to using GitHub
-published: true
+published: true # if you set this to false it will publish the page as a draft
 description: An article used to test pushing to Dev.to
 tags: 'productivity, beginners, test, github'
 cover_image: ./assets/github-octocat.jpg
