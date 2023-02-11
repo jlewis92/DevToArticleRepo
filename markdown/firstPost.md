@@ -29,9 +29,9 @@ Once you've done this you need to pull down the repository using your favourite 
 
 ## Repository setup
 
-If I've not got a .gitignore (because I couldn't be bothered to search usually!) I add an empty .gitignore ready for me. I also like to add some [pre-commits](https://pre-commit.com/).  to my repository to help out.  In every repository I make I tend to add the check-yaml,  end-of-file-fixer, trailing-whitespace and detect-secrets.  Also, as this is a primarily markup repository, I also add markdownlint.
+If I've not got a .gitignore (because I couldn't be bothered to search usually!) I add an empty .gitignore ready for me. I also like to add some [pre-commits](https://pre-commit.com/).  to my repository to help out.  In every repository I make I tend to add the check-yaml,  end-of-file-fixer, trailing-whitespace and detect-secrets.  Also, as this is a primarily markup repository, I also added a [linting](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/) tool called markdownlint.
 
-For reference, here's the .pre-commit-config.yaml for this repo
+For reference, here's what the .pre-commit-config.yaml looks like for this repo
 
 ```yaml
 
@@ -154,6 +154,13 @@ jobs:
         conventional_commits: true
         dry_run: false # set this to true if you want to do a dry run
 
+```
+
+When you've managed a successful run and published an article, you should notice that the start of your markdown has been updated with something like the following:
+
+```markdown
+id: 1361493
+date: '2023-02-11T02:55:36Z'
 ```
 
 If this updates in the future, it can be found [here](https://github.com/jlewis92/DevToArticleRepo/blob/main/.github/workflows/main.yml)
