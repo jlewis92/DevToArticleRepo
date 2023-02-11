@@ -72,7 +72,7 @@ DevToArticleRepo
 └── README.md
 ```
 I'll probably revise this, but for now this good. I'm going to start working on the file `firstPost.md`. In order to do this I setup my environment by just right clicking in the file `firstPost.md` and select `Markdown Preview Enhanced: open preview to the side` 
-<img src="assets/markdownPreview.png"  width=50% height=50%>
+![Alt text](assets/markdownPreview.png)
 
 Once this is done, I'm ready to start editing the markdown. By default, dev.to articles require certain [headers](https://github.com/sinedied/devto-github-template/blob/main/posts/example.md) for them to be picked up, so this file has been started with the following:
 
@@ -88,4 +88,7 @@ canonical_url: null
 ```
 Once this is done, you can write your [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) article
 
-At this point, you've hopefully written your article and we're pretty much done with the git side. After this we'll get ready to setup the GitHub actions project for pushing this code into the repo
+At this point, you've hopefully written your article and we're pretty much done with the git side and you can close the 200 windows you have open explaining how to style markup. After this we'll get ready to setup the GitHub actions project for pushing this code into the repo
+
+It's pretty straight forward to get started, all you need to do is grab an API token from dev.to and place it in the repositories' [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) tab with a memorable name.  You can find the API key by clicking on your profile picture and going to `Extensions >  generate API key`
+
