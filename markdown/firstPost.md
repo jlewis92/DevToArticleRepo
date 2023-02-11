@@ -155,6 +155,8 @@ jobs:
 
 ```
 
+https://github.com/jlewis92/DevToArticleRepo/blob/86f529e714681a07bc979f88d15f0ab8c9515bf0/.github/workflows/main.yml#L1-L26
+
 If this updates in the future, it can be found [here](https://github.com/jlewis92/DevToArticleRepo/blob/main/.github/workflows/main.yml)
 
 Once this is done, just commit the file and the GitHub action should run.  All being well
