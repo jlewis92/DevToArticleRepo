@@ -36,7 +36,7 @@ Thought I'd put this at the top so it doesn't get lost, but there are essentiall
 This project was completed on a vague timescale of the below.  I wasn't really working on this full time at the start, just a few hours a week but I did a fair amount the last week of this project
 
 - week 1: HTML/CSS and cloud front hosting
-- week 2: javascript, database, API and python
+- week 2: JavaScript, database, API and python
 - week 3: everything else
 
 ## Dev environment
