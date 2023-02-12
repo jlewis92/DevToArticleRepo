@@ -5,7 +5,6 @@ description: An article describing e2e completion of the AWS cloud resume challe
 tags: 'challenge, AWS, github, terraform'
 canonical_url: null
 cover_image: assets/resumeChallenge/cloudChallenge.png
-id: 1362432
 ---
 
 ## Background
@@ -17,6 +16,10 @@ Back in January I'd made a promise to myself to spend at least a little bit of t
 Impressive right? No not really, but to be fair it's a resume so it's supposed to be simple and most of the interesting stuff in this project is pretty much all behind the scenes.
 
 If you're interested in viewing the website itself it's [here](https://resume.jacklewis.dev/)
+
+Slightly more impressive, I think is this diagram of the end product:
+
+![cloud challenge](assets/resumeChallenge/cloudChallenge.png)
 
 ## What's the challenge?
 
