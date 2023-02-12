@@ -77,7 +77,7 @@ One of the interesting thing's I did find was that you can use css to do stuff w
 ```css
 span+span {
     margin-left: 50px;
-    /* adds in 50 px spacing when there's a double <span> tag */
+    /* adds in 50 px spacing when there's a double span tag */
 }
 ```
 
@@ -91,10 +91,10 @@ If you've never setup an AWS account before, it's pretty straight forward, just 
 
 ```python
 $ aws configure
-AWS Access Key ID [None]: <key ID>
-AWS Secret Access Key [None]: <access key>
-Default region name [None]: <region>
-Default output format [None]: <json or yaml>
+AWS Access Key ID [None]: key ID
+AWS Secret Access Key [None]: access key
+Default region name [None]: region
+Default output format [None]: json or yaml
 ```
 
 If you've also setup MFA everywhere you might also need to use the `sts get-session-token` CLI function as well.  AWS recommends you use the toolkit instead but I've tended to find it didn't work very well when I was using it for work last year.  You should also setup billing alerts on your account, because [unexpected bills are terrible](https://www.reddit.com/r/aws/comments/lbqcos/my_forgotten_account_has_a_20000_bill_how_screwed/)
@@ -210,8 +210,8 @@ Just as a sidenote however, if you're doing a lambda proxy in the gateway, the r
 ```json
 {
     "statusCode": "200",
-    "body": <body>,
-    "headers": <headers>
+    "body": "body",
+    "headers": "headers"
 }
 ```
 
