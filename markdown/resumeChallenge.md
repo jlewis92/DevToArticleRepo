@@ -89,7 +89,7 @@ Generally, I've worked much more heavily WPF when building frontends which uses 
 
 If you've never setup an AWS account before, it's pretty straight forward, just go [here](https://aws.amazon.com/) and give AWS your credit card number.  While outside the scope of this article, it's pretty much mandatory for me that you complete all of the security recommendations in IAM before starting as well as enabling MFA everywhere.  You should also download the AWS CLI and setup credentials using aws configure:
 
-```aws
+```python
 $ aws configure
 AWS Access Key ID [None]: <key ID>
 AWS Secret Access Key [None]: <access key>
