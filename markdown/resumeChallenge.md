@@ -3,6 +3,7 @@ title: "The AWS Cloud Resume Challenge: A Writeup"
 published: false
 description: An article describing e2e completion of the AWS cloud resume challenge
 tags: 'productivity, AWS, github, terraform, html, javascript, cloud, python, challenge,'
+cover_image: ./assets/resumeChallenge/cloudChallenge.png
 canonical_url: null
 ---
 
@@ -10,7 +11,7 @@ canonical_url: null
 
 Back in January I'd made a promise to myself to spend at least a little bit of time doing something technical every week, whether that be writing software, building out hardware or just generally reading something to try and keep my skills up.  To start with I was going to try and complete code [kata's](https://t2informatik.de/en/smartpedia/code-kata/) in a few languages I wasn't too familiar with such as python.  However, I quickly found that I just find writing code with no payoff to be not that interesting to me, so I was looking for something a bit different.  As a result I'd been looking around the internet for something technical to do and came across the [AWS purity test](https://www.awspuritytest.com/) which I did as a bit of fun as I work with AWS pretty heavily in my day job.  One of the questions on the test was talking about completion of the [cloud resume challenge](https://cloudresumechallenge.dev/) and while I'm not in the market for a new job it sounded like a really interesting project to tie all my skills together and given I was already trying to find something that wasn't driving me to tears with boredom I thought might as well try it.  3 weeks later I've got the following:
 
-![Resume Challenge](assets/resumeChallenge/website.png)
+<!-- ![Resume Challenge](assets/resumeChallenge/website.png) -->
 
 Impressive right? No not really, but to be fair it's a resume so it's supposed to be simple and most of the interesting stuff in this project is pretty much all behind the scenes.
 
@@ -110,7 +111,7 @@ At this point, all you need to do is upload your website files, then go to prope
 
 Technically, HTTPS comes before this step, but CloudFront offers a lot of automation if you have this up beforehand.  The guide recommends using using Route 53 but I'm not a massive fan as the interface is pretty old school, and even though I've set my account into GBP, it's still showing me prices in dollars. Finally, it also doesn't have the .dev top level domain that I want, possibly because Google operates it:
 
-![no .dev](assets/resumeChallenge/route53.png)
+<!-- ![no .dev](assets/resumeChallenge/route53.png) -->
 
 I specifically wanted .dev as it matches what I do and also comes with added bonus of forcing HTTPS, meaning if I want this to work it needs to have certificates setup properly. For this domain to buy it off [Google Domains](https://domains.google.com/registrar/search) and set it to auto renew
 
@@ -134,7 +135,7 @@ Once you've gotten you're template done and waited the 20 minutes for everything
 
 As a sidenote, the CloudFormation template does generate logs into an S3 bucket without rotation.  For now I've left them on as it's pretty small amounts of data, but I've still set a lifecycle retention policy on the logs folder just in case.  You can also set alerts around stuff like number alerts over a time period or data the rate for upload and download among other things.  You can also get some metrics around the website, such as usage:
 
-![extremely high usage](assets/resumeChallenge/usage.png)
+<!-- ![extremely high usage](assets/resumeChallenge/usage.png) -->
 
 Or viewers:
 
@@ -158,7 +159,7 @@ Once this is setup, all you need to do in order to use DynamoDb local is attach 
 
 However, the best thing about NoSql Workbench is it's ability to do your work for you by generating code directly using the operation builder:
 
-![code generation](assets/resumeChallenge/generateCode.png)
+<!-- ![code generation](assets/resumeChallenge/generateCode.png) -->
 
 The expression above basically increments the VisitorCount column by 1 and if I hit the generate code button, it basically gives me the code to do this in Python, JavaScript or Java.
 
@@ -242,7 +243,7 @@ I'm going to talk through each of these files individually (outside of main and 
 
 Within this `.tf` file I've got configuration entirely related to the single endpoint I've got in my gateway.  However, there is actually 2 endpoints i the repository, a POST which actually returns the data and an OPTIONS request which is used for CORS.  Unfortunately, the way to write Terraform for gateway is pretty verbose as there's quite a lot of steps to enable everything together.  I've split it all out though with headers to make it a little easier what each step is - for reference, it's basically having to setup all of these stages:
 
-![gateway response](assets/resumeChallenge/gatewayLambda.png)
+<!-- ![gateway response](assets/resumeChallenge/gatewayLambda.png) -->
 
 This particular request is taken from an example [here](https://codeburst.io/aws-api-gateway-by-example-3733d7792635) if you want to see how this was setup within the AWS console.
 
@@ -280,7 +281,7 @@ So to start with I just setup a private GitHub repo (that I've since made public
 
 Once I'd done this I committed everything I had and it was time to work on the GitHub Actions project.  As the Terraform is using a load environment variables to run, I set this up as secrets on Actions so that they couldn't be seen in logs:
 
-![backend secrets](assets/resumeChallenge/secrets.png)
+<!-- ![backend secrets](assets/resumeChallenge/secrets.png) -->
 
 After this I wrote a pipeline which does the following:
 
@@ -293,7 +294,7 @@ After this I wrote a pipeline which does the following:
 
 I also got the build to output some nice content about Terraform in a pull request:
 
-![Terraform output](assets/resumeChallenge/githubRunner.png)
+<!-- ![Terraform output](assets/resumeChallenge/githubRunner.png) -->
 
 I should probably say, I work on builds pretty regularly so this stuff isn't that new to me
 
