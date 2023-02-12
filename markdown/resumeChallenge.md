@@ -2,7 +2,7 @@
 title: The AWS Cloud Resume Challenge A Writeup
 published: false
 description: An article describing e2e completion of the AWS cloud resume challenge
-tags: 'productivity, AWS, github, terraform, html'
+tags: 'productivity, AWS, github, terraform'
 canonical_url: null
 cover_image: null
 ---
