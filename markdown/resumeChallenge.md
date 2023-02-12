@@ -5,6 +5,7 @@ description: An article describing e2e completion of the AWS cloud resume challe
 tags: 'productivity, AWS, github, terraform'
 canonical_url: null
 cover_image: null
+id: 1362432
 ---
 
 ## Background
