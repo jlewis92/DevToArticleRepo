@@ -4,7 +4,7 @@ published: false
 description: An article used to test pushing to Dev.to
 tags: 'productivity, beginners, test, github'
 cover_image: ./assets/github-octocat.png
-canonical_url: ""
+canonical_url: ''
 series: adding a series
 id: 1362797
 ---
