@@ -4,8 +4,7 @@ published: false
 description: An article describing e2e completion of the AWS cloud resume challenge
 tags: 'challenge, AWS, github, terraform'
 canonical_url: null
-cover_image: assets/resumeChallenge/cloudChallenge.png
-id: 1362856
+cover_image: assets/resumeChallenge/resumeChallenge.png
 ---
 
 ## Background
@@ -20,7 +19,7 @@ If you're interested in viewing the website itself it's [here](https://resume.ja
 
 Slightly more impressive, I think is this diagram of the end product:
 
-![cloud challenge](assets/resumeChallenge/cloudChallenge.png)
+![cloud challenge](assets/resumeChallenge/resumeChallenge.png)
 
 ## What's the challenge?
 
