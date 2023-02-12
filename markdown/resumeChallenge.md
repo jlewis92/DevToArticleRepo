@@ -68,9 +68,9 @@ It has been a fair few years since I've written purely in HTML/CSS without somet
 
 This then does the following with the skills section on the resume:
 
-![Large screen](assets/resumeChallenge/technicalSkillsMultiple.png)
+<!-- ![Large screen](assets/resumeChallenge/technicalSkillsMultiple.png) -->
 
-![Small screen](assets/resumeChallenge/technicalSkillsSingle.png)
+<!-- ![Small screen](assets/resumeChallenge/technicalSkillsSingle.png) -->
 
 One of the interesting thing's I did find was that you can use css to do stuff when certain tags are sat next to each other, like the following:
 
@@ -125,7 +125,7 @@ Really, this section should be called the CloudFront section of the guide as it'
 
 To start with , you're pretty much going to go to the [link](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) in the AWS resume challenge and then choose stack 3 and filling out the questions it asks you.  This wasn't a great experience for figuring out how it works as the CloudFormation template is pretty obtuse, given it calls out to other scripts within it, and the CloudFormation designer UI is pretty cluttered and difficult to see what's going on:
 
-![CloudFormation](assets/resumeChallenge/cloudFormation.png)
+<!-- ![CloudFormation](assets/resumeChallenge/cloudFormation.png) -->
 
 As you can see, the entire section of the template showing how the ACM stuff works is just being pulled in from another template. Also, if you drag the designer around, your location in the template gets reset to the top which is really annoying.  However, I did like that the template made it super easy to set the subdomain to "resume" instead of "www" as I'm planning to host a more modern website on that subdomain at some point in the future.
 
@@ -139,7 +139,7 @@ As a sidenote, the CloudFormation template does generate logs into an S3 bucket 
 
 Or viewers:
 
-![viewers](assets/resumeChallenge/viewers.png)
+<!-- ![viewers](assets/resumeChallenge/viewers.png) -->
 
 **_NOTE:_** one of the big errors I had around the CloudFormation template was around how it basically disables javascript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
 
@@ -153,7 +153,7 @@ I think this is the first time I've worked fully with vanilla JavaScript before 
 
 I've used dynamo pretty heavily before so I'm pretty much using this to brush up on this again.  For myself, while you can write tables straight into AWS, I find it's much easier to visualise and work on tables using an offline tool called [NoSql Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html).  If you want to use DynamoDb offline is to just set the toggle for DDB Local server and publish a table into a local connection and it's now setup for you:
 
-![DDB Local](assets/resumeChallenge/ddbLocal.png)
+<!-- ![DDB Local](assets/resumeChallenge/ddbLocal.png) -->
 
 Once this is setup, all you need to do in order to use DynamoDb local is attach an endpoint url when you create a client for DynamoDb.  If you haven't changed the default port for DynamoDb, it will look something like this in Python - `endpoint_url="http://localhost:8000"`.
 
@@ -201,7 +201,7 @@ Once I got this all done I moved onto writing some tests.  I just decided to kee
 
 The API is built using API gateway that has a lambda proxy integration to the lambda expression I'd built in the previous step and returns data to the client like this:
 
-![gateway response](assets/resumeChallenge/gatewayResponse.png)
+<!-- ![gateway response](assets/resumeChallenge/gatewayResponse.png) -->
 
 I decided to just return a string because it was easy that way.  If I was to extend this and have more than a single value returned to the client I'd change this to JSON as it's much nicer handing data between server and client.  However, this was such a small part of the project I just decided not to do it. I understand it's not a great idea though as my website just returns whatever the result of the fetch is, I'm just lazy and had spent far too much time on this already.  I should also say I'm a bit iffy about leaving a lambda gateway open as I usually stick them behind a cognito pool or oauth authoriser whenever I've used an API from API gateway in the past.
 
@@ -217,7 +217,7 @@ Just as a sidenote however, if you're doing a lambda proxy in the gateway, the r
 
 Once I got this all hooked up, I just updated the javascript to pull in from the backend and I can now see my visitor counter is updating:
 
-![visitor counter](assets/resumeChallenge/visitorCounter.png)
+<!-- ![visitor counter](assets/resumeChallenge/visitorCounter.png) -->
 
 Although no it wasn't initially, as I needed add CORS headers to the request to get it to display content.  Technically, I could have just hosted it on an endpoint within jacklewis.dev, but I wanted to try adding headers directly instead. I'll talk about how I did that in the next step.
 
