@@ -5,6 +5,7 @@ description: An article describing e2e completion of the AWS cloud resume challe
 tags: 'challenge, AWS, github, terraform'
 canonical_url: null
 cover_image: assets/resumeChallenge/cloudChallenge.png
+id: 1362856
 ---
 
 ## Background
