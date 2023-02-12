@@ -1,5 +1,36 @@
 {
     "spellchecker.ignoreWordsList": [
-        "unprocessable"
+        "unprocessable",
+        "backend",
+        "Backend",
+        "Frontend",
+        "frontend",
+        "XAML",
+        "frontend's",
+        "CloudFront",
+        "vscode",
+        "HTTPS",
+        "CloudFormation",
+        "subdomain",
+        "lifecycle",
+        "DynamoDb",
+        "untick",
+        "NoSql",
+        "sidenote",
+        "VisitorCount",
+        "venvs",
+        "PowerShell",
+        "moto",
+        "boto3",
+        "Cognito",
+        "JSON",
+        "authoriser",
+        "oauth",
+        "kata's",
+        "Terraform",
+        "jacklewis",
+        "CORS",
+        "OIDC",
+        "CloudWatch"
     ]
 }

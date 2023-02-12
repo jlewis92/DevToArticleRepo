@@ -24,7 +24,7 @@ Slightly more impressive, I think is this diagram of the end product:
 
 ## What's the challenge?
 
-Put simply, it's a series of 16 steps to build and host a static website in your cloud of choice, then pull some data in from a database.  You also need set up a fully automated deployment of both the backend and frontend using infrastructure as code.  Once you've done all this, you then need to post a writeup about it somewhere online with tips and tricks and your experiences of doing the challenge. Additionally, there's a discord you can use if you have questions, but I intentionally avoided this as I wanted to see if I could do this on my own.  If you're thinking of doing the challenge, it might be best to stop here if you want to avoid some spoilers, otherwise let's go through it!
+Put simply, it's a series of 16 steps to build and host a static website in your cloud of choice, then pull some data in from a database.  You also need set up a fully automated deployment of both the backend and frontend using infrastructure as code.  Once you've done all this, you then need to post a write-up about it somewhere online with tips and tricks and your experiences of doing the challenge. Additionally, there's a discord you can use if you have questions, but I intentionally avoided this as I wanted to see if I could do this on my own.  If you're thinking of doing the challenge, it might be best to stop here if you want to avoid some spoilers, otherwise let's go through it!
 
 ## Final outcome
 
@@ -88,7 +88,7 @@ span+span {
 
 ### Both
 
-Generally, I've worked much more heavily WPF when building frontends which uses XAML.  I think as an observation between the 2, I've found that it's probably easier to place your content where you want it to go with XAML (I tend to not find my self googling how to centre content anyway!) but actually styling elements within XAML is much harder.
+Generally, I've worked much more heavily WPF when building frontend's which uses XAML.  I think as an observation between the 2, I've found that it's probably easier to place your content where you want it to go with XAML (I tend to not find my self googling how to centre content anyway!) but actually styling elements within XAML is much harder.
 
 ## AWS setup
 
@@ -136,7 +136,7 @@ As you can see, the entire section of the template showing how the ACM stuff wor
 
 ### CloudFront
 
-Once you've gotten you're template done and waited the 20 minutes for everything to get setup for you, all you need to do is throw your website into the bucket the template generated and watch as your site is served! Well, with a caveat - because CloudFront is using edge locations to serve your content as close to the geographical location of the caller as it can, it basically has to distribute these to  the servers around the world and cache them.  As a result, it can take up to 2 days for content to be displayed throughout the world.  Once you've realised this, you can take advantage of CloudFront [invalidations](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) to force the cache to refresh.  The [pricing](https://aws.amazon.com/cloudfront/pricing/) for this is that you get 1000 free invalidations per month, and if you want to refresh the entire website you can use `/*` or for individual files you can use `/<file name>.<file name type>` and list the specific ones you want.  You also need to pay for edge computing, but currently my bill is sat at £0.
+Once you've gotten you're template done and waited the 20 minutes for everything to get setup for you, all you need to do is throw your website into the bucket the template generated and watch as your site is served! Well, with a caveat - because CloudFront is using edge locations to serve your content as close to the geographical location of the caller as it can, it basically has to distribute these to  the servers around the world and cache them.  As a result, it can take up to 2 days for content to be displayed throughout the world.  Once you've realised this, you can take advantage of CloudFront [invalidation requests](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) to force the cache to refresh.  The [pricing](https://aws.amazon.com/cloudfront/pricing/) for this is that you get 1000 free invalidation requests per month, and if you want to refresh the entire website you can use `/*` or for individual files you can use `/<file name>.<file name type>` and list the specific ones you want.  You also need to pay for edge computing, but currently my bill is sat at £0.
 
 As a sidenote, the CloudFormation template does generate logs into an S3 bucket without rotation.  For now I've left them on as it's pretty small amounts of data, but I've still set a lifecycle retention policy on the logs folder just in case.  You can also set alerts around stuff like number alerts over a time period or data the rate for upload and download among other things.  You can also get some metrics around the website, such as usage:
 
@@ -146,7 +146,7 @@ Or viewers:
 
 ![viewers](assets/resumeChallenge/viewers.png)
 
-**_NOTE:_** one of the big errors I had around the CloudFormation template was around how it basically disables javascript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
+**_NOTE:_** one of the big errors I had around the CloudFormation template was around how it basically disables JavaScript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
 
 ## JavaScript
 
@@ -200,7 +200,7 @@ If you want, here's a direct [link to the full source code](https://github.com/j
 
 ## Tests
 
-Once I got this all done I moved onto writing some tests.  I just decided to keep simple and use the `unittest` library that's built into Python.  I then found that there's a pretty great mocking library for the AWS boto3 client called [moto](https://pypi.org/project/moto/) that can be used to write proper tests for Python.  Compared to C# this is great, as my only option there appears to be writing wrapper classes that call the function.  To be honest though, this is where I spent a lot of my time as I ended encountering a bug in moto that I ended up making an [issue](https://github.com/getmoto/moto/issues/5916) on GitHub about.  Fortunately, the people running the moto repo responded quickly and it's been fixed - all I need to do now is update my tests to work with the fixes!
+Once I got this all done I moved onto writing some tests.  I just decided to keep simple and use the `unittest` library that's built into Python.  I then found that there's a pretty great mocking library for the AWS boto3 client called [moto](https://pypi.org/project/moto/) that can be used to write proper tests for Python.  Compared to C# this is great, as my only option there appears to be writing wrapper classes that call the function.  To be honest though, this is where I spent a lot of my time as I ended encountering a bug in moto that I ended up making an [issue](https://github.com/getmoto/moto/issues/5916) on GitHub about.  Fortunately, the people running the moto repository responded quickly and it's been fixed - all I need to do now is update my tests to work with the fixes!
 
 ## API
 
@@ -208,7 +208,7 @@ The API is built using API gateway that has a lambda proxy integration to the la
 
 ![gateway response](assets/resumeChallenge/gatewayResponse.png)
 
-I decided to just return a string because it was easy that way.  If I was to extend this and have more than a single value returned to the client I'd change this to JSON as it's much nicer handing data between server and client.  However, this was such a small part of the project I just decided not to do it. I understand it's not a great idea though as my website just returns whatever the result of the fetch is, I'm just lazy and had spent far too much time on this already.  I should also say I'm a bit iffy about leaving a lambda gateway open as I usually stick them behind a cognito pool or oauth authoriser whenever I've used an API from API gateway in the past.
+I decided to just return a string because it was easy that way.  If I was to extend this and have more than a single value returned to the client I'd change this to JSON as it's much nicer handing data between server and client.  However, this was such a small part of the project I just decided not to do it. I understand it's not a great idea though as my website just returns whatever the result of the fetch is, I'm just lazy and had spent far too much time on this already.  I should also say I'm a bit iffy about leaving a lambda gateway open as I usually stick them behind a Cognito pool or oauth authoriser whenever I've used an API from API gateway in the past.
 
 Just as a sidenote however, if you're doing a lambda proxy in the gateway, the response returned by the lambda must be in the format as follows:
 
@@ -220,7 +220,7 @@ Just as a sidenote however, if you're doing a lambda proxy in the gateway, the r
 }
 ```
 
-Once I got this all hooked up, I just updated the javascript to pull in from the backend and I can now see my visitor counter is updating:
+Once I got this all hooked up, I just updated the JavaScript to pull in from the backend and I can now see my visitor counter is updating:
 
 ![visitor counter](assets/resumeChallenge/visitorCounter.png)
 
@@ -282,7 +282,7 @@ I did quite enjoy writing the Terraform, it's interesting to work on something l
 
 The backend can be found [here](https://github.com/jlewis92/ResumeProject-backend)
 
-So to start with I just setup a private GitHub repo (that I've since made public) and stick a Terraform and Python .gitignore file into it and the MIT licence.  After that I added some Git [pre-commits](https://pre-commit.com/) to do stuff like auto-format the Terraform scripts and check if I've left any secrets in plaintext on the repository.  I did get a false positive on the GitHub thumbprint for the OIDC token which is why it has `# pragma: allowlist secret` written next to it.
+So to start with I just setup a private GitHub repository (that I've since made public) and stick a Terraform and Python .gitignore file into it and the MIT licence.  After that I added some Git [pre-commits](https://pre-commit.com/) to do stuff like auto-format the Terraform scripts and check if I've left any secrets in plain-text on the repository.  I did get a false positive on the GitHub thumbprint for the OIDC token which is why it has `# pragma: allowlist secret` written next to it.
 
 Once I'd done this I committed everything I had and it was time to work on the GitHub Actions project.  As the Terraform is using a load environment variables to run, I set this up as secrets on Actions so that they couldn't be seen in logs:
 
@@ -307,7 +307,7 @@ I should probably say, I work on builds pretty regularly so this stuff isn't tha
 
 The frontend can be found [here](https://github.com/jlewis92/ResumeProject-frontend)
 
-The CI-CD for the frontend was simpler than the backend as it didn't have a load of Terraform to run, and it really just needs to sync with an S3 bucket and run an invalidation to force the changes to propagate.  Given there's a limit to the number of invalidations you can do before being charged, I did think about adding a rolling monthly limit, but ultimately decided there wasn't much point as I've used less than 20 of them out 1000 I get free every month.  I also added secrets needed by the github runner to get an OIDC token.
+The CI-CD for the frontend was simpler than the backend as it didn't have a load of Terraform to run, and it really just needs to sync with an S3 bucket and run an invalidation to force the changes to propagate.  Given there's a limit to the number of invalidation requests you can do before being charged, I did think about adding a rolling monthly limit, but ultimately decided there wasn't much point as I've used less than 20 of them out 1000 I get free every month.  I also added secrets needed by the github runner to get an OIDC token.
 
 ## Blog post
 
