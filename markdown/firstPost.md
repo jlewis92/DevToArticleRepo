@@ -11,9 +11,13 @@ date: '2023-02-11T02:55:36Z'
 
 This article is mainly around so that I can rmemember my current setup and maybe it'll help you be more productive but it's essentially a guid on how to setup vscode and GitHub to be able to post to Dev.to
 
+## Benefits
+
+Well, the major one is that if you accidentally delete an article off DEV.to, instead of it being lost, you can just restore it from the GitHub repo.  Your articles also aren't tied to DEV.to so if you wanted to also post to a personal blog as well as to DEV.to, instead of having to copy and paste between websites, you can just update the Actions workflow to post to both.
+
 ## Prerequisites
 
-- Dev.to account
+- DEV.to account
 - GitHub account
 - git
 - vscode
@@ -167,6 +171,9 @@ If this updates in the future, it can be found [here](https://github.com/jlewis9
 
 Once this is done, just commit the file and the GitHub action should run.  All being well
 
-**_NOTE:_** your repository needs to be public to get the code to work if you have any images, otherwise you'll get errors around images not being public
+As I'm going through using this repository here's some things I've noticed to keep in mind
 
-**_NOTE:_** You can have a maximum of 4 tags, otherwise you'll get unprocessable entity
+- Your repository needs to be public to get the code to work if you have any images, otherwise you'll get errors around images not being public
+- You can have a maximum of 4 tags, otherwise you'll get unprocessable entity
+- Articles sometimes fail on first post, what you can do to get around this is change a little text and then push again
+- Images are cached by DEV.to, you can force them to update by slightly changing the file name
