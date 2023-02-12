@@ -168,3 +168,5 @@ If this updates in the future, it can be found [here](https://github.com/jlewis9
 Once this is done, just commit the file and the GitHub action should run.  All being well
 
 **_NOTE:_** your repository needs to be public to get the code to work if you have any images, otherwise you'll get errors around images not being public
+
+**_NOTE:_** You can have a maximum of 4 tags, otherwise you'll get unprocessable entity
