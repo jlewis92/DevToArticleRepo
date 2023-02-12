@@ -4,7 +4,7 @@ published: false
 description: An article describing e2e completion of the AWS cloud resume challenge
 tags: 'challenge, AWS, github, terraform'
 canonical_url: null
-cover_image: null
+cover_image: assets/resumeChallenge/cloudChallenge.png
 id: 1362432
 ---
 
@@ -12,7 +12,7 @@ id: 1362432
 
 Back in January I'd made a promise to myself to spend at least a little bit of time doing something technical every week, whether that be writing software, building out hardware or just generally reading something to try and keep my skills up.  To start with I was going to try and complete code [kata's](https://t2informatik.de/en/smartpedia/code-kata/) in a few languages I wasn't too familiar with such as python.  However, I quickly found that I just find writing code with no payoff to be not that interesting to me, so I was looking for something a bit different.  As a result I'd been looking around the internet for something technical to do and came across the [AWS purity test](https://www.awspuritytest.com/) which I did as a bit of fun as I work with AWS pretty heavily in my day job.  One of the questions on the test was talking about completion of the [cloud resume challenge](https://cloudresumechallenge.dev/) and while I'm not in the market for a new job it sounded like a really interesting project to tie all my skills together and given I was already trying to find something that wasn't driving me to tears with boredom I thought might as well try it.  3 weeks later I've got the following:
 
-<!-- ![Resume Challenge](assets/resumeChallenge/website.png) -->
+![Resume Challenge](assets/resumeChallenge/website.png)
 
 Impressive right? No not really, but to be fair it's a resume so it's supposed to be simple and most of the interesting stuff in this project is pretty much all behind the scenes.
 
@@ -69,9 +69,9 @@ It has been a fair few years since I've written purely in HTML/CSS without somet
 
 This then does the following with the skills section on the resume:
 
-<!-- ![Large screen](assets/resumeChallenge/technicalSkillsMultiple.png) -->
+![Large screen](assets/resumeChallenge/technicalSkillsMultiple.png)
 
-<!-- ![Small screen](assets/resumeChallenge/technicalSkillsSingle.png) -->
+![Small screen](assets/resumeChallenge/technicalSkillsSingle.png)
 
 One of the interesting thing's I did find was that you can use css to do stuff when certain tags are sat next to each other, like the following:
 
@@ -112,7 +112,7 @@ At this point, all you need to do is upload your website files, then go to prope
 
 Technically, HTTPS comes before this step, but CloudFront offers a lot of automation if you have this up beforehand.  The guide recommends using using Route 53 but I'm not a massive fan as the interface is pretty old school, and even though I've set my account into GBP, it's still showing me prices in dollars. Finally, it also doesn't have the .dev top level domain that I want, possibly because Google operates it:
 
-<!-- ![no .dev](assets/resumeChallenge/route53.png) -->
+![no .dev](assets/resumeChallenge/route53.png)
 
 I specifically wanted .dev as it matches what I do and also comes with added bonus of forcing HTTPS, meaning if I want this to work it needs to have certificates setup properly. For this domain to buy it off [Google Domains](https://domains.google.com/registrar/search) and set it to auto renew
 
@@ -126,7 +126,7 @@ Really, this section should be called the CloudFront section of the guide as it'
 
 To start with , you're pretty much going to go to the [link](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/) in the AWS resume challenge and then choose stack 3 and filling out the questions it asks you.  This wasn't a great experience for figuring out how it works as the CloudFormation template is pretty obtuse, given it calls out to other scripts within it, and the CloudFormation designer UI is pretty cluttered and difficult to see what's going on:
 
-<!-- ![CloudFormation](assets/resumeChallenge/cloudFormation.png) -->
+![CloudFormation](assets/resumeChallenge/cloudFormation.png)
 
 As you can see, the entire section of the template showing how the ACM stuff works is just being pulled in from another template. Also, if you drag the designer around, your location in the template gets reset to the top which is really annoying.  However, I did like that the template made it super easy to set the subdomain to "resume" instead of "www" as I'm planning to host a more modern website on that subdomain at some point in the future.
 
@@ -136,11 +136,11 @@ Once you've gotten you're template done and waited the 20 minutes for everything
 
 As a sidenote, the CloudFormation template does generate logs into an S3 bucket without rotation.  For now I've left them on as it's pretty small amounts of data, but I've still set a lifecycle retention policy on the logs folder just in case.  You can also set alerts around stuff like number alerts over a time period or data the rate for upload and download among other things.  You can also get some metrics around the website, such as usage:
 
-<!-- ![extremely high usage](assets/resumeChallenge/usage.png) -->
+![extremely high usage](assets/resumeChallenge/usage.png)
 
 Or viewers:
 
-<!-- ![viewers](assets/resumeChallenge/viewers.png) -->
+![viewers](assets/resumeChallenge/viewers.png)
 
 **_NOTE:_** one of the big errors I had around the CloudFormation template was around how it basically disables javascript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
 
@@ -154,13 +154,13 @@ I think this is the first time I've worked fully with vanilla JavaScript before 
 
 I've used dynamo pretty heavily before so I'm pretty much using this to brush up on this again.  For myself, while you can write tables straight into AWS, I find it's much easier to visualise and work on tables using an offline tool called [NoSql Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html).  If you want to use DynamoDb offline is to just set the toggle for DDB Local server and publish a table into a local connection and it's now setup for you:
 
-<!-- ![DDB Local](assets/resumeChallenge/ddbLocal.png) -->
+![DDB Local](assets/resumeChallenge/ddbLocal.png)
 
 Once this is setup, all you need to do in order to use DynamoDb local is attach an endpoint url when you create a client for DynamoDb.  If you haven't changed the default port for DynamoDb, it will look something like this in Python - `endpoint_url="http://localhost:8000"`.
 
 However, the best thing about NoSql Workbench is it's ability to do your work for you by generating code directly using the operation builder:
 
-<!-- ![code generation](assets/resumeChallenge/generateCode.png) -->
+![code generation](assets/resumeChallenge/generateCode.png)
 
 The expression above basically increments the VisitorCount column by 1 and if I hit the generate code button, it basically gives me the code to do this in Python, JavaScript or Java.
 
@@ -202,7 +202,7 @@ Once I got this all done I moved onto writing some tests.  I just decided to kee
 
 The API is built using API gateway that has a lambda proxy integration to the lambda expression I'd built in the previous step and returns data to the client like this:
 
-<!-- ![gateway response](assets/resumeChallenge/gatewayResponse.png) -->
+![gateway response](assets/resumeChallenge/gatewayResponse.png)
 
 I decided to just return a string because it was easy that way.  If I was to extend this and have more than a single value returned to the client I'd change this to JSON as it's much nicer handing data between server and client.  However, this was such a small part of the project I just decided not to do it. I understand it's not a great idea though as my website just returns whatever the result of the fetch is, I'm just lazy and had spent far too much time on this already.  I should also say I'm a bit iffy about leaving a lambda gateway open as I usually stick them behind a cognito pool or oauth authoriser whenever I've used an API from API gateway in the past.
 
@@ -218,7 +218,7 @@ Just as a sidenote however, if you're doing a lambda proxy in the gateway, the r
 
 Once I got this all hooked up, I just updated the javascript to pull in from the backend and I can now see my visitor counter is updating:
 
-<!-- ![visitor counter](assets/resumeChallenge/visitorCounter.png) -->
+![visitor counter](assets/resumeChallenge/visitorCounter.png)
 
 Although no it wasn't initially, as I needed add CORS headers to the request to get it to display content.  Technically, I could have just hosted it on an endpoint within jacklewis.dev, but I wanted to try adding headers directly instead. I'll talk about how I did that in the next step.
 
@@ -244,7 +244,7 @@ I'm going to talk through each of these files individually (outside of main and 
 
 Within this `.tf` file I've got configuration entirely related to the single endpoint I've got in my gateway.  However, there is actually 2 endpoints i the repository, a POST which actually returns the data and an OPTIONS request which is used for CORS.  Unfortunately, the way to write Terraform for gateway is pretty verbose as there's quite a lot of steps to enable everything together.  I've split it all out though with headers to make it a little easier what each step is - for reference, it's basically having to setup all of these stages:
 
-<!-- ![gateway response](assets/resumeChallenge/gatewayLambda.png) -->
+![gateway response](assets/resumeChallenge/gatewayLambda.png)
 
 This particular request is taken from an example [here](https://codeburst.io/aws-api-gateway-by-example-3733d7792635) if you want to see how this was setup within the AWS console.
 
@@ -282,7 +282,7 @@ So to start with I just setup a private GitHub repo (that I've since made public
 
 Once I'd done this I committed everything I had and it was time to work on the GitHub Actions project.  As the Terraform is using a load environment variables to run, I set this up as secrets on Actions so that they couldn't be seen in logs:
 
-<!-- ![backend secrets](assets/resumeChallenge/secrets.png) -->
+![backend secrets](assets/resumeChallenge/secrets.png)
 
 After this I wrote a pipeline which does the following:
 
@@ -295,7 +295,7 @@ After this I wrote a pipeline which does the following:
 
 I also got the build to output some nice content about Terraform in a pull request:
 
-<!-- ![Terraform output](assets/resumeChallenge/githubRunner.png) -->
+![Terraform output](assets/resumeChallenge/githubRunner.png)
 
 I should probably say, I work on builds pretty regularly so this stuff isn't that new to me
 
