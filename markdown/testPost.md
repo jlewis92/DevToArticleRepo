@@ -1,12 +1,11 @@
 ---
-title: Post used to test pushing stuff via the repo
+title: "test push"
 published: false
-description: An article used to test pushing to Dev.to
-tags: 'productivity, beginners, test, github'
-cover_image: 'https://unsplash.com/photos/cOkpTiJMGzA'
-canonical_url: ''
-series: stuff
-id: 1362800
+description: "Test post"
+tags: bash, linux, beginners
+cover_image: "https://unsplash.com/photos/cOkpTiJMGzA"
+canonical_url: ""
+series: "Linux from A to Z"
 ---
 
 
