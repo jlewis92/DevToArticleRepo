@@ -8,6 +8,4 @@ canonical_url: ''
 id: 1362976
 ---
 
-some Text modded
-
-with line feeds
+some Text modded without linefeeds
