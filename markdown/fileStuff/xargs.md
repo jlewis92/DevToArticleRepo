@@ -13,7 +13,7 @@ series: Linux from A to Z
 
 The `xargs` command in Linux is a powerful tool that allows you to run commands based on input from another command. It is often used in conjunction with other commands such as `find`, `grep`, and `ls` to perform operations on a large number of files or data. In this blog, we'll explore some of the key features and benefits of `xargs` and provide some examples to demonstrate its usage.
 
-### **_Basic Usage of `xargs`_**
+### **_Basic Usage of xargs_**
 
 The basic usage of `xargs` is to pass the output of one command as input to another command. For example, you can use the following command to delete all `.txt` files in the current directory:
 
