@@ -178,3 +178,4 @@ As I'm going through using this repository here's some things I've noticed to ke
 - Articles sometimes fail on first post, what you can do to get around this is change a little text and then push again
 - Images are cached by DEV.to, you can force them to update by slightly changing the file name
 - If you edit an article that's published via GitHub, the changes will be reverted on the next run of the Action build
+- Cover images can be pretty finicky and do break the build regularly if you start changing them
