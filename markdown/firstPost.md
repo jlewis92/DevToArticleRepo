@@ -9,11 +9,11 @@ id: 1361493
 date: '2023-02-11T02:55:36Z'
 ---
 
-This article is mainly around so that I can rmemember my current setup and maybe it'll help you be more productive but it's essentially a guid on how to setup vscode and GitHub to be able to post to Dev.to
+This article is mainly around so that I can rmemember my current setup and maybe it'll help you be more productive but it's essentially a guid on how to setup vscode and GitHub to be able to post to DEV.to.
 
 ## Benefits
 
-Well, the major one is that if you accidentally delete an article off DEV.to, instead of it being lost, you can just restore it from the GitHub repo.  Your articles also aren't tied to DEV.to so if you wanted to also post to a personal blog as well as to DEV.to, instead of having to copy and paste between websites, you can just update the Actions workflow to post to both.
+Well, the major one is that if you accidentally delete an article off DEV.to, instead of it being lost, you can just restore it from the GitHub repo.  Your articles also aren't tied to DEV.to so if you wanted to also post to a personal blog as well as to DEV.to, instead of having to copy and paste between websites, you can just update the Actions workflow to post to both.  Additionally, ever accidentally hit publish when you meant to save a draft? I have, this makes that much harder to do as you've got a specific you can unset
 
 ## Prerequisites
 
@@ -177,3 +177,4 @@ As I'm going through using this repository here's some things I've noticed to ke
 - You can have a maximum of 4 tags, otherwise you'll get unprocessable entity
 - Articles sometimes fail on first post, what you can do to get around this is change a little text and then push again
 - Images are cached by DEV.to, you can force them to update by slightly changing the file name
+- If you edit an article that's published via GitHub, the changes will be reverted on the next run of the Action build

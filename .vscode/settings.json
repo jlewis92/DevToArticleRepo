@@ -31,6 +31,21 @@
         "jacklewis",
         "CORS",
         "OIDC",
-        "CloudWatch"
+        "CloudWatch",
+        "Selfhosted",
+        "SourceForge",
+        "Youtube",
+        "Fireship",
+        "Aarthifical",
+        "Aarthificial",
+        "devlog",
+        "Pexels",
+        "Unsplash",
+        "Technica",
+        "homelab",
+        "Homelab",
+        "LinuxServer",
+        "Linode",
+        "RegExr"
     ]
 }
