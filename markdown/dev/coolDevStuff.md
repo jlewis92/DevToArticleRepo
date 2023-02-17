@@ -5,6 +5,7 @@ description: A set of technical resources you can use to help keep up your skill
 tags: 'productivity, reading, resources, learning'
 cover_image: ../assets/dev/coolDevStuff/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
 canonical_url: null
+id: 1369843
 ---
 
 Over time I've found a bunch various websites and resources I like to use to either help learn or keep on top new industry trends.  This list is going to be fairly general, but I think you can probably figure out I've got some specific interests.
