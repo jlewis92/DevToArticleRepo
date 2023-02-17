@@ -2,7 +2,7 @@
 title: Great technical resources to keep in mind
 published: false
 description: A set of technical resources you can use to help keep up your skills
-tags: 'productivity, reading, fun'
+tags: 'productivity, reading, resources, learning'
 cover_image: ../assets/dev/coolDevStuff/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
 canonical_url: null
 ---
