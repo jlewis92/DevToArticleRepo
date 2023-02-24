@@ -6,6 +6,7 @@ tags: 'networking, opnsense, beginner, hardware'
 cover_image: ../assets/networking/opnsenseRouter/fullNetwork.jpg
 canonical_url: null
 id: 1378533
+date: '2023-02-24T20:33:16Z'
 ---
 
 Before I get into this post, I just want to say I'm pretty new to networking - before I started this process the only real knowledge I had was what I'd picked up in my job as a software developer, which tends to be less focused on in-depth configuration of a network, and more in making sure you aren't leaking credentials through a gateway or setting up a networked [PED](https://en.wikipedia.org/wiki/PIN_pad).  As well as what I've picked up over the years from being interested in tech, like setting up a NAS or changing my DNS/IP settings.  I should also say this is less a guide (please checkout the ones I've linked below if you're truly interested) and more a write-up of some the challenges and interesting things I came across.  This is a really lengthy post, and possibly not the right audience, but I do think it's useful for a software developer's to understand some of the networking side because (at least for me) a lot of the things we work on nowadays are internet enabled.
