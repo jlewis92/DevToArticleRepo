@@ -1,6 +1,6 @@
 ---
 title: How (and why) I built my home network from scratch
-published: false
+published: true
 description: An article describing how I built my home network and the choices I made
 tags: 'networking, opnsense, beginner, hardware'
 cover_image: ../assets/networking/opnsenseRouter/fullNetwork.jpg
