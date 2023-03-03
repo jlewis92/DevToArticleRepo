@@ -5,6 +5,8 @@ description: A script to convert the remote origin locally
 tags: 'productivity, git, management, automation'
 cover_image: ../assets/github-octocat.png
 canonical_url: null
+id: 1387158
+date: '2023-03-03T16:40:26Z'
 ---
 
 Ever been in the position that your company has decided to change the provider for their git repository? Maybe GitHub isn't offering as a good a deal as BitBucket?  As a software developer this is actually fairly common.  Personally, this has happened to approximately once every couple of years for a variety reasons.  Now, while these git repository providers make it extremely simple to move the repository itself between providers using an import function, actually moving the repository on your machine is left to be figured out by an individual developer.  You can just pull a new copy down of each repository, but this can take time, especially if you a large number repositories that you've slowly picked up over the years.  Additionally, if you use cloning of the repositories, you can clutter up your file system with multiple versions of the same code. Fortunately, git also offer's tools that make this process a bit simpler.
