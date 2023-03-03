@@ -139,6 +139,8 @@
         "MicroTik",
         "untagged",
         "SSID",
-        "LackRack"
+        "LackRack",
+        "BitBucket",
+        "workspace"
     ]
 }
