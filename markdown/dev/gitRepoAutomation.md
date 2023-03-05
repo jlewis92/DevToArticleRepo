@@ -1,7 +1,7 @@
 ---
 title: How to programmatically convert desktop git repositories to a new remote repository
 published: true
-description: A script to convert the remote origin locally
+description: Building a script to convert the git remote origin programmatically
 tags: 'productivity, git, management, automation'
 cover_image: ../assets/github-octocat.png
 canonical_url: null
