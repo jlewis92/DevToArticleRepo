@@ -28,7 +28,6 @@ So we've established that we all need to know how to estimate, but there's a sli
 ## The three point estimate
 
 Frankly, I don't use this *that* often anymore, but when I was starting out and had no idea what to do, doing a three point estimate helps you frame the problem in an easy to digest way.
-
 **NOTE:** Three point estimation is the *endpoint* of estimation i.e.: once you've gone through the other steps in trying to figure out how long the task will take
 
 While there are [several](https://en.wikipedia.org/wiki/Three-point_estimation) ways to get to a three point estimation, we're most interested in the quickest way of getting there so we're going to use the simplest.
@@ -43,4 +42,6 @@ You then divide the 3 estimates by 3 and then dived them by 3.  For example:  I 
 
 This gives me the following:
 
-$${1 + 4  + 16 \over 3} = 7$$
+{% katex %}
+{1 + 4  + 16 \over 3} = 7
+{% endkatex %}
