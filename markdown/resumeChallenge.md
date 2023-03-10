@@ -1,6 +1,6 @@
 ---
-title: The AWS Cloud Resume Challenge - A Writeup
-published: false
+title: The AWS Cloud Resume Challenge
+published: true
 description: An article describing e2e completion of the AWS cloud resume challenge
 tags: 'challenge, AWS, github, terraform'
 canonical_url: null
@@ -8,9 +8,11 @@ cover_image: assets/resumeChallenge/resumeChallenge.png
 id: 1362859
 ---
 
+_**NOTE:**_ I did write this article a month ago, but waited to release it to see how much it would cost - turns out it was about 60p
+
 ## Background
 
-Back in January I'd made a promise to myself to spend at least a little bit of time doing something technical every week, whether that be writing software, building out hardware or just generally reading something to try and keep my skills up.  To start with I was going to try and complete code [kata's](https://t2informatik.de/en/smartpedia/code-kata/) in a few languages I wasn't too familiar with such as python.  However, I quickly found that I just find writing code with no payoff to be not that interesting to me, so I was looking for something a bit different.  As a result I'd been looking around the internet for something technical to do and came across the [AWS purity test](https://www.awspuritytest.com/) which I did as a bit of fun as I work with AWS pretty heavily in my day job.  One of the questions on the test was talking about completion of the [cloud resume challenge](https://cloudresumechallenge.dev/) and while I'm not in the market for a new job it sounded like a really interesting project to tie all my skills together and given I was already trying to find something that wasn't driving me to tears with boredom I thought might as well try it.  3 weeks later I've got the following:
+Back in January I'd made a promise to myself to spend at least a little bit of time doing something technical every week, whether that be writing software, building out hardware or just generally reading something to try and keep my skills up.  To start with I was going to try and complete code [kata's](https://t2informatik.de/en/smartpedia/code-kata/) in a few languages I wasn't too familiar with, such as python.  However, knowing myself I do just find writing code with no reason other than to write code to be not that interesting to me, so I was looking for something a bit different.  As a result I'd been looking around the internet for something technical to do and came across the [AWS purity test](https://www.awspuritytest.com/) which I did as a bit of fun as I work with AWS pretty heavily in my day job.  One of the questions on the test was talking about completion of the [cloud resume challenge](https://cloudresumechallenge.dev/) and while I'm not in the market for a new job, it sounded like a really interesting project to tie all my skills together and I thought might as well try it.  3 weeks later I've got the following:
 
 ![Resume Challenge](assets/resumeChallenge/website.png)
 
@@ -146,7 +148,7 @@ Or viewers:
 
 ![viewers](assets/resumeChallenge/viewers.png)
 
-**_NOTE:_** one of the big errors I had around the CloudFormation template was around how it basically disables JavaScript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
+_**NOTE:**_ one of the big errors I had around the CloudFormation template was around how it basically disables JavaScript from running by setting the Content Security Policy to deny everything in the AWS Role that it generates, as I'd missed this when I first went through it, it caused me a lot issues later on.
 
 ## JavaScript
 
