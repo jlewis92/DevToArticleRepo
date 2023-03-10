@@ -143,6 +143,8 @@
         "BitBucket",
         "workspace",
         "katex",
-        "endkatex"
+        "endkatex",
+        "markdownlint",
+        "codepen"
     ]
 }
