@@ -6,6 +6,7 @@ tags: 'challenge, AWS, github, terraform'
 canonical_url: null
 cover_image: assets/resumeChallenge/resumeChallenge.png
 id: 1362859
+date: '2023-03-10T16:15:38Z'
 ---
 
 _**NOTE:**_ I did write this article a month ago, but waited to release it to see how much it would cost - turns out it was about 60p
