@@ -50,3 +50,6 @@ Now as this is close to 8 hours, I'd then just round up to a full 8 hour day as 
 
 <!-- markdownlint-disable-next-line -->
 {% codepen https://codepen.io/alvaromontoro/pen/JxMPqa %}
+
+<!-- markdownlint-disable-next-line -->
+{% mermaid https://mermaid.live/edit#pako:eNptj7sOwjAMRX_FeKX9gQ5FSAzAyprFSm9ppTwgJEJV1X8naWHD05V9jqU7s_YduOEXnglO4zTKPYhVjvIczahRt-3-6gfX0BnGeCq5osG_SQJo8unwF94wLa4gNEACWXzRcqszWq9OfjxudkWX1VjprO3-4xfqAUP3AIk7rtgiWBm73GIuguI4wEJxk2OHXpKJipVbMiop-tvkNDcxJFScHp3EX-ltuXwAZiVYtA %}
