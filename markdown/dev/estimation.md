@@ -45,3 +45,13 @@ This gives me the following:
 {% katex %}
 {1 + 4  + 16 \over 3} = 7
 {% endkatex %}
+
+Now as this is close to 8 hours, I'd then just round up to a full 8 hour day as that's close enough.
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```

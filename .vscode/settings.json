@@ -141,6 +141,8 @@
         "SSID",
         "LackRack",
         "BitBucket",
-        "workspace"
+        "workspace",
+        "katex",
+        "endkatex"
     ]
 }
