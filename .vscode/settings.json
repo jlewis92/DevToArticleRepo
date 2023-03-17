@@ -145,6 +145,26 @@
         "katex",
         "endkatex",
         "markdownlint",
-        "codepen"
+        "codepen",
+        "Timeboxing",
+        "standup",
+        "analytics",
+        "programmatically",
+        "clockify",
+        "Forem",
+        "OpenSearch",
+        "ElasticSearch",
+        "Kibana",
+        "BigQuery",
+        "OpenAPI",
+        "API's",
+        "RESTSharp",
+        "RestSharp",
+        "HttpClient",
+        "IsRequired",
+        "NoSQL",
+        "AppSettings",
+        "ForemGatherer",
+        "Cloudinary"
     ]
 }
