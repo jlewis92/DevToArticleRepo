@@ -344,6 +344,7 @@ This is pretty helpful, as it let's me set the exact length of time I'm interest
 I'm not going to go through how I made every individual visualisation, but if you're interested I've dropped a copy of the dashboard I built in the [repository for this project](https://github.com/jlewis92/ForemAnalyticsGatherer/tree/main/OpenSearch%20dashboard). Here's some pictures that I've taken of the dashboard:
 
 ![OpenSearch Dashboard](../assets/dev/analyticsDashboard/openSearchFullDash.png)
+
 ![OpenSearch Dashboard two](../assets/dev/analyticsDashboard/openSearchFullDashboardTwo.png)
 
 It definitely bears repeating, I'm not a data scientist, so I'm sure you could figure out some better things to look at (as well as not constantly changing case in the names of the visualisations).  I do think this does give a pretty good idea of the things I can gather for helping me see how I'm doing on DEV.
