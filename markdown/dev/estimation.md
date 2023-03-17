@@ -1,6 +1,6 @@
 ---
 title: A developer's guide to estimation
-published: false
+published: true
 description: How to estimate
 tags: 'estimation, tools, management, beginner'
 cover_image: ../assets/dev/estimates/estimateCover.jpg
@@ -10,7 +10,7 @@ id: 1395819
 
 ## Background
 
-I should probably start by saying I *really* dislike estimating.  Most of the time it's a bit like licking your finger and sticking it into the air and the rest of the time it's even worse! Between having to (usually) quantify a large number of unknowns that can slow you down, you have to try and plan in whether the coworker helping you out isn't going to (rightly) go on sick leave just before that major dependency comes in. When you finally do give an estimate, to the people you are giving the estimate to, it's not an *estimate*, it's a guarantee and when it doesn't happen for a multitude of reasons, you get a pretty uncomfortable meeting where you have to try and explain why you didn't do what you said you would.  This feeling is so entrenched into software development that there's a pretty common 'joke' about it:
+I should probably start by saying I *really* dislike estimating.  Most of the time it's a bit like licking your finger and sticking it into the air and the everywhere else it's even worse! Between having to (usually) quantify a large number of unknowns that can slow you down, you have to try and plan in whether the coworker helping you out isn't going to (rightly) go on sick leave just before that major dependency comes in. When you finally do give an estimate, to the people you are giving the estimate to, it's not an *estimate*, it's a guarantee and when it doesn't happen for a multitude of reasons, you get a pretty uncomfortable meeting where you have to try and explain why you didn't do what you said you would.  This feeling is so entrenched into software development that there's a pretty common 'joke' about it:
 
 ```text
 person: Hey we've got this really cool feature we need adding! All you need to do is add a button to the form
@@ -96,6 +96,8 @@ When you're actually in the meeting, and getting asked for an estimate here's so
   - If you're new to the process of giving estimates, and the other people around you know that, if you get it wrong it's not such a big deal, provided you're getting closer every time.  We've all been where you, are and it's not an easy thing to do when you're just getting started
 - **Explain you're reasoning**
   - What I mean by this is, is that just give a short sentence showing you understand the task and set expectations around difficulties you may have.  For example, if I know that I've got dependencies on another team, I 'd probably say something like "I can get this done by end of day tomorrow, provided I get dependency X in the next couple of hours".
+
+![Estimation](../assets/dev/estimates/scott-graham-5fNmWej4tAA-unsplash.jpg)
 
 ### After the estimate
 
