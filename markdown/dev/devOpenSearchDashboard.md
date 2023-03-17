@@ -5,6 +5,7 @@ description: How I built a simple analytics dashboard for DEV.to using OpenSearc
 tags: 'DEV, OpenSearch, data, analytics'
 cover_image: null
 canonical_url: null
+id: 1404819
 ---
 
 ## Background
