@@ -6,6 +6,7 @@ tags: 'estimation, tools, management, beginner'
 cover_image: ../assets/dev/estimates/estimateCover.jpg
 canonical_url: null
 id: 1395819
+date: '2023-03-17T16:48:15Z'
 ---
 
 ## Background
