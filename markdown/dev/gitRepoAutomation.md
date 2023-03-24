@@ -9,7 +9,7 @@ id: 1387158
 date: '2023-03-03T16:40:26Z'
 ---
 
-Ever been in the position that your company has decided to change the provider for their git repository? Maybe GitHub isn't offering as a good a deal as BitBucket?  As a software developer this is actually fairly common.  Personally, this has happened to approximately once every couple of years for a variety reasons.  Now, while these git repository providers make it extremely simple to move the repository itself between providers using an import function, actually moving the repository on your machine is left to be figured out by an individual developer.  You can just pull a new copy down of each repository, but this can take time, especially if you a large number repositories that you've slowly picked up over the years.  Additionally, if you use cloning of the repositories, you can clutter up your file system with multiple versions of the same code. Fortunately, git also offer's tools that make this process a bit simpler.
+Ever been in the position that your company has decided to change the provider for their git repository? Maybe GitHub isn't offering as a good a deal as BitBucket?  As a software developer this is actually fairly common.  Personally, this has happened to approximately once every couple of years for a variety reasons.  Now, while these git repository providers make it extremely simple to move the repository itself between providers using an import function, actually moving the repository on your machine is left to be figured out by an individual developer.  You can just pull a new copy down of each repository, but this can take time, especially if you have a large number repositories that you've slowly picked up over the years.  Additionally, if you use cloning of the repositories, you can clutter up your file system with multiple versions of the same code. Fortunately, git also offer's tools that make this process a bit simpler.
 
 ## Manual process
 
@@ -37,7 +37,7 @@ git config remote.origin.url "https://jlewis92@bitbucket.org/jlewistest/conversi
 
 I then verified by running `git config remote.origin.url` again, and I can see that the new remote origin is now `https://jlewis92@bitbucket.org/jlewistest/conversionrepo.git`
 
-I then just ran `git pull` and I instantly got a popup asking me to sign in to BitBucket:
+I then just ran `git pull` and I instantly got a pop-up asking me to sign in to BitBucket:
 
 ![BitBucket Authentication](../assets/dev/gitRepoConversion/BitBucketAuth.png)
 
@@ -60,7 +60,7 @@ https://github.com/jlewis92/conversionRepo.git - GitHub
 https://jlewis92@bitbucket.org/jlewistest/conversionrepo.git - BitBucket
 ```
 
-We can see that this URL essentially has 2 parts, the base path which won't change between repositories and the end point URL, which will.  This means all we need to is write a script which can assemble the new URL from the old and attach it to the new base path.  We also  need to get the script to work on all repositories in a folder so that we can automate the update process.
+We can see that this URL essentially has 2 parts, the base path which won't change between repositories and the end point URL, which will.  This means all we need to do is write a script which can assemble the new URL from the old and attach it to the new base path.  We also need to get the script to work on all repositories in a folder so that we can automate the update process.
 
 I decided to use PowerShell for this as it's the scripting language I know best, but pretty much all scripting languages should work.
 

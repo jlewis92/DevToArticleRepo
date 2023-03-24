@@ -1,0 +1,37 @@
+{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QGiven I'm just running locally and the security plugin takes some extra setup, I just went with the dev docker-compose file.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QIf you just want to explore the things OpenSearch can do, at this point you can open up dashboard, press the home button on the left-hand side, press \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and it should give you a choice to add some sample data to play around with:\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAdditionally, while .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet 7 is out, after being burnt by .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QNet 7 is out, after being burnt by .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet Core 3.0 announcing end-of-life a few days before it happened, I pretty much always work with the long term support version if I can help it, so I went with .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QNet Core 3.0 announcing end-of-life a few days before it happened, I pretty much always work with the long term support version if I can help it, so I went with .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet 6.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QWhile I'm using C# and .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet 6, this tool has a pretty large list of supported languages, so if you wanted to code something similar, you could absolutely use your language of choice, rather than C#.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QAfter you run this command, go to the output directory, then into src and you should see 2 C# projects:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QWhen I was doing this, there were a few values in the Articles Response that are marked as required, but I didn't get them back, so did need to modify the generated code very slightly to remove the IsRequired attribute from a few Articles model.\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Q{% katex %} {1 + 4  + 16 \\over 3} = 7 {% endkatex %}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% katex %} {1 + 4  + 16 \\over 3} = 7 {% endkatex %}\\E$"}
+{"rule":"MISSING_HYPHEN","sentence":"^\\QNow as this is close to 8 hours, I'd then just round up to a full 8 hour day as that's close enough.\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Q{% katex %} 8 \\times 1.2 =  9.6 {% endkatex %}\\E$"}
+{"rule":"YOUR_NN","sentence":"^\\QIf this is happening to you, trust me it's going to be far less awkward to explain now, than when you have to tell the same people pressuring you it's going to take longer than you said\nBe honest with yourself\nIf you're throwing out estimates that you think may be possible, but have historically taken you a lot longer (as well as constantly having to explain to the project manager why it's taking longer), it's probably a good idea to take a look at you're estimation process.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIf I've not got a .gitignore (because I couldn't be bothered to search usually!)\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QIf I've not got a .gitignore (because I couldn't be bothered to search usually!)\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QI add an empty .gitignore ready for me.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QI add an empty .gitignore ready for me.\\E$"}
+{"rule":"A_RB_NN","sentence":"^\\QAlso, as this is a primarily markup repository, I also added a linting tool called markdownlint.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QFor reference, here's what the .pre-commit-config.yaml looks like for this repo\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMarkdown Preview Enhanced\nMainly so I can get the markdown preview to not be in dark mode, like it's probably going to be viewed in\nMarkdown All in One\nProvides an easier way to format markdown\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMarkdown Preview Enhanced\nThis is so I can get the markdown preview to not be in dark mode, like it's probably going to be viewed in\nMarkdown All in One\nProvides an easier way to format Markdown\\E$"}
+{"rule":"UNIT_SPACE","sentence":"^\\QAs it's just starting out, and I'm definitely going to be below the 500MB limit GitHub gives you for a basic repository.\\E$"}
+{"rule":"SETUP_VERB","sentence":"^\\QDev.to setup\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QAt this point, you've hopefully written your article and we're pretty much done with the git side so you can close the 200 windows you have open explaining how to style markup.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QIt's really quite straightforward and I've got the below github actions yaml file to publish it\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QIt's really quite straightforward and I've got the below GitHub actions yaml file to publish it\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QIt's really quite straightforward and I've got the below GitHub actions YAML file to publish it\\E$"}
+{"rule":"GIT_GET","sentence":"^\\QWhen I want it added to Git, I just move the file into a folder at the same level, and all the images work automatically\\E$"}
+{"rule":"GIT_GET","sentence":"^\\QWhen I want it added to Git, I just move the file into a folder at the same level, and all the images work automatically\nI've swapped away from using the SpellChecker tool to using LTeX because of the additional grammar checking.\\E$"}
+{"rule":"UNIT_SPACE","sentence":"^\\QGitHub allows a maximum of 100MB per file before they block you\nBased on this answer from Stack Overflow, the \"hard limit\" for the size of a repository in GitHub is 100GB, but really should be kept under 5GB (and preferably 1GB) - it's a little difficult to find information on this though\nGitHub lets you have an unlimited number of repositories\nThere's an endpoint that lets you setup a GitHub repository programmatically\nzip and tar files both have the ability to easily be split apart\\E$"}
+{"rule":"UNIT_SPACE","sentence":"^\\QGitHub allows a maximum of 100MB per file before they block you\nBased on this answer from Stack Overflow, the \"hard limit\" for the size of a repository in GitHub is 100GB, but really should be kept under 5GB (and preferably 1GB) - it's a little difficult to find information on this though\nGitHub lets you have an unlimited number of repositories\nThere's an endpoint that lets you set up a GitHub repository programmatically\nzip and tar files both have the ability to easily be split apart\\E$"}
+{"rule":"A_INSTALL","sentence":"^\\QThe point of these programs is to vastly simplify the install process\\E$"}
+{"rule":"MOST_COMPARATIVE","sentence":"^\\QMost larger, more traditional languages have\\E$"}

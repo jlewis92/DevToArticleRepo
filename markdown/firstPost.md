@@ -9,7 +9,7 @@ id: 1361493
 date: '2023-02-11T02:55:36Z'
 ---
 
-This article is mainly around so that I can rmemember my current setup and maybe it'll help you be more productive but it's essentially a guid on how to setup vscode and GitHub to be able to post to DEV.to.
+This article is mainly around so that I can remember my current setup, and maybe it'll help you be more productive, but it's essentially a GUID on how to set up vscode and GitHub to be able to post to DEV.to.
 
 ## Benefits
 
@@ -24,7 +24,7 @@ Well, the major one is that if you accidentally delete an article off DEV.to, in
 
 ## First steps
 
-You need to create a github repo and name it something that makes sense to you. For me that's DevToArticleRepo. On this repo I just set a simple description and use the MIT license, because it's easy to do and start as a private repo, just in case
+You need to create a GitHub repo and name it something that makes sense to you. For me that's DevToArticleRepo. On this repo I just set a simple description and use the MIT licence, because it's easy to do and start as a private repo, just in case
 
 Once you've done this you need to pull down the repository using your favourite git tool.  I tend to use tortoise git to start off with, then move to using vscode once it's pulled down
 
@@ -33,7 +33,7 @@ Once you've done this you need to pull down the repository using your favourite 
 
 ## Repository setup
 
-If I've not got a .gitignore (because I couldn't be bothered to search usually!) I add an empty .gitignore ready for me. I also like to add some [pre-commits](https://pre-commit.com/).  to my repository to help out.  In every repository I make I tend to add the check-yaml,  end-of-file-fixer, trailing-whitespace and detect-secrets.  Also, as this is a primarily markup repository, I also added a [linting](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/) tool called markdownlint.
+If I've not got a .gitignore (because I couldn't be bothered to search usually!) I add an empty .gitignore ready for me. I also like to add some [pre-commits](https://pre-commit.com/) to my repository to help out.  In every repository I make I tend to add the check-yaml, end-of-file-fixer, trailing-whitespace and detect-secrets.  Also, as this is a primarily markup repository, I also added a [linting](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/) tool called markdownlint.
 
 For reference, here's what the .pre-commit-config.yaml looks like for this repo
 
@@ -63,18 +63,19 @@ repos:
 I then just run `pre-commit run -a` to make sure my current repo is good:
 ![pre commit check](assets/preCommitCheck.png)
 
-## Visual studio code setup
+## Visual Studio Code setup
 
 As I'm using vscode for this, I also installed a few extensions to make my life easier:
 
-- [SpellChecker](https://marketplace.visualstudio.com/items?itemName=swyphcosmo.spellchecker)
+- [LTeX](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex)
   - I think this should be obvious why this would be helpful!
+  - Provides both grammar and spell checking
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-  - Mainly so I can get the markdown preview to not be in dark mode, like it's probably going to be viewed in
+  - This is so that I can get the markdown preview to not be in dark mode, like it's probably going to be viewed in
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-  - Provides an easier way to format markdown
+  - Provides an easier way to format Markdown
 
-At this point I'm ready to start setting up my folder structure for the markdown.  As it's just starting out and I'm definitely going to be below the 500MB limit GitHub gives you for a basic repository. It looks something like this:
+At this point I'm ready to start setting up my folder structure for the markdown.  As it's just starting out, and I'm definitely going to be below the 500MB limit GitHub gives you for a basic repository. It looks something like this:
 
 ```markdown
 
@@ -93,7 +94,7 @@ DevToArticleRepo
 
 ```
 
-I'll probably revise this, but for now this good. I'm going to start working on the file `firstPost.md`. In order to do this I setup my environment by just right clicking in the file `firstPost.md` and select `Markdown Preview Enhanced: open preview to the side`
+I'll probably revise this, but for now this good. I'm going to start working on the file `firstPost.md`. In order to do this I set up my environment by just right-clicking in the file `firstPost.md` and select `Markdown Preview Enhanced: open preview to the side`
 ![markdown preview](assets/markdownPreview.png)
 
 ## Dev.to setup
@@ -117,7 +118,7 @@ Once this is done, you can write your [markdown](https://github.com/adam-p/markd
 
 ## GitHub setup
 
-At this point, you've hopefully written your article and we're pretty much done with the git side and you can close the 200 windows you have open explaining how to style markup. After this we'll get ready to setup the GitHub actions project for pushing this code into the repo
+At this point, you've hopefully written your article and we're pretty much done with the git side so you can close the 200 windows you have open explaining how to style markup. After this we'll get ready to set up the GitHub actions project for pushing this code into the repo
 
 It's pretty straight forward to get started, all you need to do is grab an API token from Dev.to and place it in the repositories' [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) tab with a memorable name.  You can find the API key by clicking on your profile picture and going to `Extensions >  generate API key`
 
@@ -127,7 +128,7 @@ We can now start working on the "free" build (GitHub gives you a load of credits
 
 ## Writing the build pipeline
 
-Once started, the main thing we're going to be doing is using the following [extension](https://github.com/marketplace/actions/publish-to-dev-to) which allows you to publish to Dev.to.  It's really quite straightforward and I've got the below github actions yaml file to publish it
+Once started, the main thing we're going to be doing is using the following [extension](https://github.com/marketplace/actions/publish-to-dev-to) which allows you to publish to Dev.to.  It's really quite straightforward and I've got the below GitHub actions YAML file to publish it
 
 ```yaml
 
@@ -171,7 +172,7 @@ If this updates in the future, it can be found [here](https://github.com/jlewis9
 
 Once this is done, just commit the file and the GitHub action should run.  All being well
 
-As I'm going through using this repository here's some things I've noticed to keep in mind
+As I'm going through using this repository, here are some things I've noticed to keep in mind
 
 - Your repository needs to be public to get the code to work if you have any images, otherwise you'll get errors around images not being public
 - You can have a maximum of 4 tags, otherwise you'll get unprocessable entity
@@ -179,3 +180,5 @@ As I'm going through using this repository here's some things I've noticed to ke
 - Images are cached by DEV.to, you can force them to update by slightly changing the file name
 - If you edit an article that's published via GitHub, the changes will be reverted on the next run of the Action build
 - Cover images can be pretty finicky and do break the build regularly if you start changing them
+- I created a `local` folder for anything that I didn't want pushed into Git yet.  I did this by adding `markdown/local/*` to the `.gitignore` file.  When I want it added to Git, I just move the file into a folder at the same level, and all the images work automatically
+- I've swapped away from using the SpellChecker tool to using LTeX because of the additional grammar checking.

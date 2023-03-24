@@ -166,6 +166,7 @@
         "AppSettings",
         "ForemGatherer",
         "Cloudinary",
-        "urls"
+        "urls",
+        "repo"
     ]
 }
