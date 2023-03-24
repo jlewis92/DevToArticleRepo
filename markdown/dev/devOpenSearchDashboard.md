@@ -1,6 +1,6 @@
 ---
 title: Building a dev.to analytics dashboard using OpenSearch
-published: false
+published: true
 description: How I built a simple analytics dashboard for DEV.to using OpenSearch
 tags: 'DEV, OpenSearch, data, analytics'
 cover_image: ../assets/dev/analyticsDashboard/openSearchArticleFront.jpg
