@@ -254,11 +254,7 @@ Re-indexing articles that I've previously indexed does not cause a new version o
 
 Now I've got code that can handle both pulling data down from Forem and then taking that data and pushing it into OpenSearch, I now just need to pull everything together and provide an interface that is easy to use.
 
-For pulling everything together, it's not that special, I'm just using a standard C# library project that takes in an AppSettings object for settings.  I did decide that I wanted the ability to toggle the collection of data from each endpoint, so I did split out the code along these lines.  Also, given the data is paginated, I do loop through until I can get all the data for use.  I understand this is not the most "efficient" method of doing this as I'm retrieving data I've previously indexed, but that might be something I look at in the future.  If you're interested, the code for how this looks, the article's endpoint is here:
-
-<!-- markdownlint-disable no-bare-urls -->
-{% github https://github.com/jlewis92/ForemAnalyticsGatherer/blob/main/ForemAnalyticsGatherer/DataGatherers/ArticleData.cs %}
-<!-- markdownlint-disable no-bare-urls -->
+For pulling everything together, it's not that special, I'm just using a standard C# library project that takes in an AppSettings object for settings.  I did decide that I wanted the ability to toggle the collection of data from each endpoint, so I did split out the code along these lines.  Also, given the data is paginated, I do loop through until I can get all the data for use.  I understand this is not the most "efficient" method of doing this as I'm retrieving data I've previously indexed, but that might be something I look at in the future.  If you're interested, the code for how this looks, the article's endpoint is [here](https://github.com/jlewis92/ForemAnalyticsGatherer/blob/main/ForemAnalyticsGatherer/DataGatherers/ArticleData.cs).
 
 ### Settings
 
