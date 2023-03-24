@@ -6,6 +6,7 @@ tags: 'DEV, OpenSearch, data, analytics'
 cover_image: ../assets/dev/analyticsDashboard/openSearchArticleFront.jpg
 canonical_url: null
 id: 1404819
+date: '2023-03-24T17:31:39Z'
 ---
 
 ## Background
