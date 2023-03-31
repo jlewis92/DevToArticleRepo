@@ -1,6 +1,6 @@
 ---
 title: Great programs to help out any software developer
-published: false
+published: true
 description: Some of the tools I use to speed up development
 tags: 'beginner, tools, software, productivity'
 cover_image: ../assets/dev/softwareDevTooling/devToolingCover.jpg
@@ -66,11 +66,7 @@ There was a distinction between an IDE and a code editor in the past where an ID
 
 ### Browser
 
-I know this sounds extremely obvious, but the *choice* of browser can actually be really important as (while this has gotten a lot better recently) different web browser's can render content differently (who else remembers the dreaded *this website only runs on Internet Explorer*).  What this means is that if you want your website to look like what the vast majority of your user's experience it's a good idea to track something like the most popular browsers:
-
-<!-- markdownlint-disable no-bare-urls -->
-{% embed https://www.w3schools.com/browsers/ %}
-<!-- markdownlint-enable no-bare-urls -->
+I know this sounds extremely obvious, but the *choice* of browser can actually be really important as (while this has gotten a lot better recently) different web browser's can render content differently (who else remembers the dreaded *this website only runs on Internet Explorer*).  What this means is that if you want your website to look like what the vast majority of your user's experience it's a good idea to track something like the most popular browsers. For example, [the w3schools website](https://www.w3schools.com/browsers/) shows that Google Chrome has a market share of nearly 80% across 60 million visits.
 
 This is one of the reasons I use Google Chrome as my primary browser, but I am hoping that [Arc](https://arc.net/) comes to Windows, which is also based on Chromium.
 
