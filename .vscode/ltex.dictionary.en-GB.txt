@@ -29,3 +29,12 @@ WinGet
 NordPass
 KeePassXC
 NeoVim
+BareTail
+regex
+KLOGG
+Sysinternals
+Autorun
+Autologon
+ZoomIt
+ShareX
+Foxit
