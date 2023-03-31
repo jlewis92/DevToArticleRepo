@@ -5,6 +5,7 @@ description: Some of the tools I use to speed up development
 tags: 'beginner, tools, software, productivity'
 cover_image: ../assets/dev/softwareDevTooling/devToolingCover.jpg
 canonical_url: null
+id: 1421850
 ---
 
 ## Background
