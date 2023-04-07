@@ -6,6 +6,7 @@ tags: 'productivity, beginner, motivation, tips'
 cover_image: ../assets/dev/productivityTips/carl-heyerdahl-KE0nC8-58MQ-unspl.jpg
 canonical_url: null
 id: 1429591
+date: '2023-04-07T19:25:35Z'
 ---
 
 ## Preface
