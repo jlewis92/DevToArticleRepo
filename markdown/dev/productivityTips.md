@@ -1,6 +1,6 @@
 ---
 title: Tips and tricks on how to keep motivated while writing code
-published: false
+published: true
 description: Tips that help me keep productive and keep writing code in my spare time
 tags: 'productivity, beginner, motivation, tips'
 cover_image: ../assets/dev/productivityTips/carl-heyerdahl-KE0nC8-58MQ-unspl.jpg
