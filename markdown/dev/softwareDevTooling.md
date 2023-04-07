@@ -6,6 +6,7 @@ tags: 'beginner, tools, software, productivity'
 cover_image: ../assets/dev/softwareDevTooling/devToolingCover.jpg
 canonical_url: null
 id: 1421850
+date: '2023-03-31T16:25:52Z'
 ---
 
 ## Background
