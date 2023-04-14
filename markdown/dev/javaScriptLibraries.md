@@ -28,8 +28,10 @@ OK, this isn't a tool to *directly* write code and also is probably a worse opti
 
 ## [Chart.js](https://github.com/chartjs/Chart.js)
 
+Simple chart:
+
 <!-- markdownlint-disable-next-line -->
-{% codepen https://codepen.io/jlewis92/pen/JjaMyxP %}
+{% codepen https://codepen.io/jlewis92/pen/VwEvgoP %}
 
 I think Chart.js is pretty self-explanatory.  It's used to make charts.  The above is a codepen based on the number of referrals I've received for one of my articles.  Just in this simple use case, it's easier to see the relative values of all the different places I'm getting viewers from, which is much easier to understand than the list that the default view gives.
 
@@ -51,7 +53,7 @@ This is another one that might not be that useful as [Katex](https://katex.org/)
 
 ## [MotionCanvas](https://github.com/motion-canvas/motion-canvas)
 
-[MotionCanvas](../assets/dev/javaScriptLibraries/motionCanvas.webm)
+[MotionCanvas]([../assets/dev/javaScriptLibraries/motionCanvas.webm](https://github.com/jlewis92/DevToArticleRepo/blob/main/markdown/assets/dev/javaScriptLibraries/motionCanvas.webm))
 
 MotionCanvas is a way of describing animations via code for use in vide recording.  Granted, the primary use case of MotionCanvas is for video editing software and outputs individual frames rather than a full video and can't be built in a codepen.  However, it's not difficult to use FFmpeg to get a WebM.  There's a full video on how powerful MotionCanvas can be here:
 
