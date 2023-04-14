@@ -5,6 +5,7 @@ description: JavaScript libraries that can be used to improve articles written i
 tags: 'DEV, codepen, javascript, expression'
 cover_image: ../assets/dev/javaScriptLibraries/carbon.png
 canonical_url: null
+id: 1436063
 ---
 
 I've written a few articles on DEV now and one of the interesting things you can do on DEV is to use [liquid tags](https://dev.to/p/editor_guide) to embed websites into a post.  There's quite a few of them that are related to programming sandboxes such as [CodePen](https://codepen.io/) which you can use to embed programming directly into an article on DEV.  As I've explained in a [previous article](https://dev.to/jlewis92/tips-and-tricks-on-how-to-keep-motivated-while-writing-code-5h3b) anything which *pushes you to write code* is a great thing to help keep your skills up.  As a result, I quite like the idea of embedding programming into my articles as it's a bit of a sneaky way to push me to write more code. Additionally, having a complete app that you can view and play with is *really* useful for understanding exactly how I did something.
