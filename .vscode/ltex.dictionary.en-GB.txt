@@ -39,3 +39,9 @@ ZoomIt
 ShareX
 Foxit
 DTO
+MathJax
+MathML
+AsciiMath
+MotionCanvas
+Cytoscape
+dagre

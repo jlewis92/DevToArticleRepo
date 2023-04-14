@@ -41,3 +41,8 @@
 {"rule":"SOME_OF_THE","sentence":"^\\QReally, there's far too many tools in this pack to go into any real detail, but some of the highlights are Process explorer (a more powerful version of task manager), syslog and process monitor (both used to monitor logs in Windows - very useful for diagnosing issues with services!).\\E$"}
 {"rule":"SOME_OF_THE","sentence":"^\\QSome of the highlights within the monitoring tools are process explorer (a more powerful version of task manager), syslog and process monitor (both used to monitor logs in Windows - very useful for diagnosing issues with services!).\\E$"}
 {"rule":"BEEN_PART_AGREEMENT","sentence":"^\\QOnly thing I'd say though, is be mindful of if you have to work around other people as a loud keyboard can be extremely distracting.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QFor example, C# has liquid tags support for DotNetFiddle.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QWhile I've found writing these diagrams does take longer than using something like draw.io (which is also written in JavaScript) it does entirely do away with manual formatting of a diagram, which can be the hardest thing to do when writing a diagram.\\E$"}
+{"rule":"YOUTUBE","sentence":"^\\Q{% youtube WTUafAwrunE %}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% youtube WTUafAwrunE %}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% endspoiler %}\\E$"}
