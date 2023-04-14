@@ -54,7 +54,7 @@ This is another one that might not be that useful as [Katex](https://katex.org/)
 
 ## [MotionCanvas](https://github.com/motion-canvas/motion-canvas)
 
-[MotionCanvas]([../assets/dev/javaScriptLibraries/motionCanvas.webm](https://github.com/jlewis92/DevToArticleRepo/blob/main/markdown/assets/dev/javaScriptLibraries/motionCanvas.webm))
+[MotionCanvas](../assets/dev/javaScriptLibraries/motionCanvas.webm)
 
 MotionCanvas is a way of describing animations via code for use in vide recording.  Granted, the primary use case of MotionCanvas is for video editing software and outputs individual frames rather than a full video and can't be built in a codepen.  However, it's not difficult to use FFmpeg to get a WebM.  There's a full video on how powerful MotionCanvas can be here:
 
