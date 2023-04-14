@@ -52,9 +52,10 @@ I want to point out, the above CodePen is made by the Two.js team, not me (and i
 
 This is another one that might not be that useful as [Katex](https://katex.org/) is supported through liquid tags. You can see an example of this same expression using the liquid tags [here](https://dev.to/jlewis92/a-developers-guide-to-estimation-3143). MathJax is essentially a library to support writing mathematical expressions through code using LaTeX, MathML, and AsciiMath notation, meaning it's a bit more modular than Katex.  Either of these tools will work though.  Additionally, if you're using a CodePen you can set the formatting how you want, rather than relying on the default in DEV.
 
-## [MotionCanvas](https://github.com/motion-canvas/motion-canvas)
+Simple motion canvas animation:
 
-[MotionCanvas](../assets/dev/javaScriptLibraries/motionCanvas.webm)
+<!-- markdownlint-disable-next-line -->
+{% vimeo https://player.vimeo.com/video/817732765?h=41bff7236b %}
 
 MotionCanvas is a way of describing animations via code for use in vide recording.  Granted, the primary use case of MotionCanvas is for video editing software and outputs individual frames rather than a full video and can't be built in a codepen.  However, it's not difficult to use FFmpeg to get a WebM.  There's a full video on how powerful MotionCanvas can be here:
 

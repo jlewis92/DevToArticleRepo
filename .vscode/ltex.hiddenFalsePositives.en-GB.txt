@@ -46,3 +46,4 @@
 {"rule":"YOUTUBE","sentence":"^\\Q{% youtube WTUafAwrunE %}\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% youtube WTUafAwrunE %}\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% endspoiler %}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% vimeo https://player.vimeo.com/video/817732765?h=41bff7236b %}\\E$"}
