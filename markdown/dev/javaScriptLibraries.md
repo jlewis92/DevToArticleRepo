@@ -1,6 +1,6 @@
 ---
 title: 7 JavaScript librarires to help express yourself on DEV
-published: false
+published: true
 description: JavaScript libraries that can be used to improve articles written in DEV
 tags: 'DEV, codepen, javascript, expression'
 cover_image: ../assets/dev/javaScriptLibraries/carbon.png
