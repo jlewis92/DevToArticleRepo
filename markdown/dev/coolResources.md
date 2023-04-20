@@ -9,15 +9,15 @@ id: 1369844
 date: '2023-02-17T19:53:30Z'
 ---
 
-Over time I've found a bunch various websites and resources I like to use to either help learn or keep on top new industry trends.  This list is going to be fairly general, but I think you can probably figure out I've got some specific interests.
+Over time I've found a bunch of websites and resources I like to use to either help learn or keep on top new industry trends.  This list is going to be fairly general, but I think you can probably figure out I've got some specific interests.
 
 ## [GitHub](https://github.com/)
 
 ![GitHub trending](../assets/dev/coolDevStuff/roman-synkevych-UT8LMo-wlyk-unsplash.png)
 
-If your not sure where to start the trending page, which can be found [here](https://github.com/trending) is always a good place to start as it's full of things that other people have found interesting and usually it's a pretty good mix of massive projects as well as the incredibly focused.  However, if you're looking for some repositories to check out ion particular:
+If your not sure where to start the trending page, which can be found [here](https://github.com/trending) is always a good place to start as it's full of things that other people have found interesting, and usually it's a pretty good mix of massive projects as well as the incredibly focused.  However, if you're looking for some repositories to check out ion particular:
 
-- Basically all of the [awesome lists](https://awesome.digitalbunker.dev/), but in particular:
+- Basically all the [awesome lists](https://awesome.digitalbunker.dev/), but in particular:
   - [Awesome](https://github.com/topics/awesome)
   - [Awesome DevOps](https://github.com/wmariuss/awesome-devops)
   - [Awesome Sysadmin](https://github.com/awesome-foss/awesome-sysadmin)
@@ -35,19 +35,19 @@ Additionally, if you're in the mood for something a little more "old school" the
 
 ![survey](../assets/dev/coolDevStuff/stackOverflow.png)
 
-The 2022 survey can be found [here](https://survey.stackoverflow.co/2022/).  I think this is pretty self explanatory, but I really enjoy the reading the most years as it gives you an insight into what's happening in the industry and also what other people are enjoying working with.  It's helped me in the past to discover and start working with new technology, such as I've recently been working with Svelte, in part because of it's high rating in the Loved vs Dreaded graph for web technologies.
+The 2022 survey can be found [here](https://survey.stackoverflow.co/2022/).  I think this is pretty self-explanatory, but I really enjoy the reading the most years as it gives you an insight into what's happening in the industry and also what other people are enjoying working with.  It's helped me in the past to discover and start working with new technology, such as I've recently been working with Svelte, in part because of its high rating in the Loved vs Dreaded graph for web technologies.
 
 ## [Humble Bundle](https://www.humblebundle.com/bundles)
 
 ![Humble Bundle](../assets/dev/coolDevStuff/humbleBundle.png)
 
-There is nearly always something technical on the humble bundle that catches my interest.  For example, at the time of writing this article there 2 book bundles available that are related to technical topics and 5 software bundles that go from game design to coding.  It's something I check semi-regularly to see if there's anything I want to pick up.
+There is nearly always something technical on the humble bundle that catches my interest.  For example, at the time of writing this article there are 2 book bundles available that are related to technical topics and 5 software bundles that go from game design to coding.  It's something I check semi-regularly to see if there's anything I want to pick up.
 
 ## [Back Blaze Drive Stats](https://www.backblaze.com/blog/backblaze-drive-stats-for-q3-2022/)
 
 ![back blaze](../assets/dev/coolDevStuff/backBlaze.png)
 
-If you've not heard of Back Blaze it's a company based around cloud storage.  As a result, they go through a lot of hard drives and they tell us about them.  While the blog in general is pretty interesting reading (such as [this](https://www.backblaze.com/blog/how-long-do-disk-drives-last/) article on how long a hard drive lasts) I'm specifically calling out the quarterly drive failure rates because of the sheer scale this company has running out there.  Also, if you've ever suffered data loss, it's nice to know the replacement isn't a dud.  While for "normal" usage this isn't *that* useful, but if you're data hoarder it's pretty much essential reading.
+If you've not heard of Back Blaze it's a company based around cloud storage.  As a result, they go through a lot of hard drives, and they tell us about them.  While the blog in general is pretty interesting reading (such as [this](https://www.backblaze.com/blog/how-long-do-disk-drives-last/) article on how long a hard drive lasts) I'm specifically calling out the quarterly drive failure rates because of the sheer scale this company has running out there.  Also, if you've ever suffered data loss, it's nice to know the replacement isn't a dud.  While for "normal" usage this isn't *that* useful, but if you're data hoarder it's pretty much essential reading.
 
 ## [Privacy Tools](https://www.privacytools.io/)
 
@@ -61,9 +61,9 @@ There's a lot of these around, but I tend to find myself reading Ars Technica wh
 
 ## [YouTube](https://www.youtube.com/)
 
-![youtube](../assets/dev/coolDevStuff/youtube.png)
+![YouTube](../assets/dev/coolDevStuff/youtube.png)
 
-Talking about YouTube does feel a little bit like teaching grandma to suck eggs, but it's still worth mentioning as there so many great channels out there that whenever I'm finding something new to learn, one of the first things I'll do is go on YouTube and see if there's any reviews or overviews for that software so I can make a decision as to whether it's worth my time.
+Talking about YouTube does feel a little bit like teaching grandma to suck eggs, but it's still worth mentioning as there so many great channels out there that whenever I'm finding something new to learn, one of the first things I'll do is go on YouTube and see if there are any reviews or overviews for that software, so I can make a decision whether it's worth my time.
 
 Some of my personal favourite channels are as below:
 
@@ -86,13 +86,13 @@ It can be a little find things on the website, but there's some excellent tutori
 
 ## [Blogs](https://www.google.com/)
 
-Following a few major blogs is useful for finding high quality content from writers you trust.  DEV.to obviously has a load of these, but I'm more looking looking out side of the platform.
+Following a few major blogs is useful for finding high quality content from writers you trust.  DEV.to obviously has a load of these, but I'm more looking outside the platform.
 
 ### [LinuxServer.io](https://www.linuxserver.io)
 
-![linux server](../assets/dev/coolDevStuff/linuxServerIo.png)
+![Linux server](../assets/dev/coolDevStuff/linuxServerIo.png)
 
-Self proclaimed "largest collection of Docker images on the web", and definitely feels like it, given they're maintaining over 100 docker images.  Although specifically, I'm calling out their excellent [blog](https://www.linuxserver.io/blog).
+Self-proclaimed "largest collection of Docker images on the web", and definitely feels like it, given they're maintaining over 100 docker images.  Although specifically, I'm calling out their excellent [blog](https://www.linuxserver.io/blog).
 
 ### [Netflix tech blog](https://netflixtechblog.com/)
 
