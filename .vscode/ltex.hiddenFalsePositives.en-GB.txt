@@ -47,3 +47,9 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% youtube WTUafAwrunE %}\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% endspoiler %}\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q{% vimeo https://player.vimeo.com/video/817732765?h=41bff7236b %}\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QThis is because the default of a dictionary is to throw an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q if\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QThis is because the default of a dictionary is to throw an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q if the method does not return positively.\\E$"}
+{"rule":"EXTREME_ADJECTIVES","sentence":"^\\QThere's a really good in-depth article found here around how a concurrent dictionary works, but essentially it's a dictionary that's designed to run safely across multiple threads (as described by the \"concurrent\" part).\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet showing that a frozen implementation of hash set was over twice as quick to get a value, as compared to a regular hash set.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThere's a comment here on the GitHub repository for .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QNet showing that a frozen implementation of hash set was over twice as quick to get a value, as compared to a regular hash set.\\E$"}
