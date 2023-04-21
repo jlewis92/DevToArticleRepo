@@ -1,10 +1,12 @@
 ---
 title: A quick tour of dictionaries in C#
 published: true
-description: A quick tour of dictionaries in C#, including where to use them
+description: 'A quick tour of dictionaries in C#, including where to use them'
 tags: 'csharp, dotnet, dictionaries, beginner'
 cover_image: ../assets/dev/cSharpDictionaries/dictionaries.png
 canonical_url: null
+id: 1443808
+date: '2023-04-21T19:10:53Z'
 ---
 
 ## Preface
