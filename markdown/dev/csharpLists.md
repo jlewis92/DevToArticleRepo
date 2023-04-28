@@ -5,6 +5,7 @@ description: 'A quick tour of lists in C#, including some of the reasons to use 
 tags: 'csharp, dotnet, lists, beginner'
 cover_image: ../assets/dev/csharpLists/lists.png
 canonical_url: null
+id: 1451656
 ---
 
 ## Preface
