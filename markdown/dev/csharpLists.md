@@ -1,6 +1,6 @@
 ---
 title: A quick tour of lists in C#
-published: false
+published: true
 description: 'A quick tour of lists in C#, including some of the reasons to use them'
 tags: 'csharp, dotnet, lists, beginner'
 cover_image: ../assets/dev/csharpLists/lists.png
