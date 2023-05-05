@@ -5,6 +5,7 @@ description: A proof of concept into how to use Git as a large file backup
 tags: 'Git, backup, csharp, dotnet'
 cover_image: ../assets/dev/gitBackup/pexels-realtoughcandycom-11035539.png
 canonical_url: null
+id: 1458794
 ---
 
 ***NOTE:*** this code, while working, is very much proof of concept and as such has lots of bugs.  I'm also not planning to fix these as this is a pretty stupid idea. However, I thought it was interesting enough to share.
