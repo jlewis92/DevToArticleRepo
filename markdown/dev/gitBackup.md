@@ -1,6 +1,6 @@
 ---
-title: Turning Git into a large file backup option
-published: false
+title: Turning Git into a large file backup solution
+published: true
 description: A proof of concept into how to use Git as a large file backup
 tags: 'Git, backup, csharp, dotnet'
 cover_image: ../assets/dev/gitBackup/pexels-realtoughcandycom-11035539.png
@@ -14,7 +14,7 @@ id: 1458794
 
 This whole thing came about from a few realizations:
 
-- GitHub allows a maximum of 100MB per file before they block you
+- GitHub allows a maximum of 100MB per file before they block uploads
 - Based on [this](https://stackoverflow.com/questions/38768454/repository-size-limits-for-github-com) answer from Stack Overflow, the "hard limit" for the size of a repository in GitHub is 100GB, but really should be kept under 5GB (and preferably 1GB) - it's a little difficult to find information on this though
 - GitHub lets you have an unlimited number of repositories
 - There's an endpoint that lets you set up a GitHub repository programmatically
@@ -24,9 +24,9 @@ So, pretty much from all of this, can I build something that can I take in a lar
 
 ### You talk about GitHub, why are you using Git?
 
-This comes down to the simple premise that GitHub would probably not be too happy with me trying this, so better not to do it at all after I've got some preliminary research done.
+This comes down to the simple premise that GitHub would probably not be too happy with me trying this, so better not to do it at all.
 
-## TL;DR - it works
+## TL;DR - yes I can
 
 Repository here:
 
@@ -40,7 +40,9 @@ Video in action here:
 
 ## Why?
 
-Honestly, it seemed like a fun challenge and that's pretty much it.  Really, this is a terrible idea to choose a backup strategy.  It's incredibly slow (that video above is over 1 minute of waiting for files transfer *locally*) and git is absolutely not built to do this as git works by analysing differences in files and saving them.  If you're using binaries (such as zip files) this means that git has to store a stupid amount of extra data to make it work.  Additionally, because of how I wrote this software, you could have up to *4* copies of the same data on disk at the same time, which is pretty terrible.  Although, while useless it was still a pretty neat project to work on.
+Honestly, it seemed like a fun challenge and that's pretty much it.  Really, this is a terrible idea to choose as a backup strategy.  It's incredibly slow (that video above is over 1 minute of waiting for files to transfer *locally*) and if you know anything about Git, binary files (such as zip files) are *terrible* thing use Git to store. This is because Git works by analysing differences in files and saving them.  If you're using binaries, this means that git has to store a stupid amount of extra data to make it work.  Additionally, because of how I wrote this software, you could have up to *4* copies of the same data on disk at the same time, which is pretty bad. Finally, it needs to be said that relying on a company to not just delete all your files if you do actually do this, it's probably a bad idea to even attempt to store anything in this manner.
+
+I know this section is more why *not* to do this, which is why I really have no excuse for doing this, other than to say I could.
 
 ## Tooling choice
 
@@ -71,7 +73,7 @@ As I said, I needed a simple database to keep track of where everything lives wi
 This fits together something like this:
 
 <!-- markdownlint-disable-next-line -->
-{% codepen https://codepen.io/jlewis92/pen/mdzBPNO %}
+{% codepen https://codepen.io/jlewis92/pen/OJBOzpo %}
 
 ## Code Structure
 
@@ -160,3 +162,5 @@ So now I've written this and established that it's pretty useless, I'm not likel
   - this was built quickly and as such error handling is pretty rudimentary
 - More tests
   - I've written a few, but I'd need more to write a fully robust test suite
+- Multithreading
+  - Granted the majority of the time this program executes is waiting for Git, but writing in the ability to pack/unpack zip files and upload git repositories in a multithreaded fashion would likely speed up the execution of this code quickly
