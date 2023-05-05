@@ -41,27 +41,6 @@ Video in action here:
 
 Honestly, it seemed like a fun challenge and that's pretty much it.  Really, this is a terrible idea to choose a backup strategy.  It's incredibly slow (that video above is over 1 minute of waiting for files transfer *locally*) and git is absolutely not built to do this as git works by analysing differences in files and saving them.  If you're using binaries (such as zip files) this means that git has to store a stupid amount of extra data to make it work.  Additionally, because of how I wrote this software, you could have up to *4* copies of the same data on disk at the same time, which is pretty terrible.  Although, while useless it was still a pretty neat project to work on.
 
-## Starting research
-
-I decided to verify that I *could* actually create a GitHub repository programmatically and fortunately the GitHub API makes this pretty straightforward to do.
-
-To start with I grabbed a copy of the GitHub OpenAPI spec from [this repository](https://github.com/github/rest-api-description) and imported the description into Postman:
-
-![GitHub Postman](../assets/dev/gitBackup/gitHubPostman.png)
-
-From here, I generated a time limited fine-grained personal access token, went to the /users/repo endpoint and checked that I could create a repository, which worked:
-
-![GitHub repository](../assets/dev/gitBackup/gitHubPostmanCreateRepo.png)
-
-I can also see the generated repository in GitHub here:
-
-<!-- markdownlint-disable-next-line -->
-{% github https://github.com/jlewis92/Hello-World %}
-
-I did it this way rather than using cURL as it's possible I'm going to want further access to the API at some point in a future project.
-
-Now this is proven that I *could* use something GitHub, I'm going to move away from using it, and just use Git locally.
-
 ## Tooling choice
 
 I'm primarily a C# developer, so I'm going to use C# and given I'm going to be interacting with the Git CLI, the easiest project to choose is a console application.  Additionally, I decided to go with zip over TAR as I'm using windows. I'll also need a database to store where the files live in GitHub and given I'm already storing everything in files, and need to move them around, a file based database was my best option, and from these SQLite before, so this was my tool of choice.
