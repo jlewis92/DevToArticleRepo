@@ -59,3 +59,12 @@ linq
 DotNetFiddle
 dotnetfiddle
 DateTime
+gitBackup
+CommandLineParser
+DotNetZip
+Serilog
+TestableIO
+GitBackup
+checkpointing
+appSettings
+json
