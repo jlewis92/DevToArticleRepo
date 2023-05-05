@@ -6,6 +6,7 @@ tags: 'csharp, dotnet, lists, beginner'
 cover_image: ../assets/dev/csharpLists/lists.png
 canonical_url: null
 id: 1451656
+date: '2023-04-28T20:29:47Z'
 ---
 
 ## Preface
