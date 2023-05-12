@@ -6,6 +6,7 @@ tags: 'csharp, dotnet, collections, beginner'
 cover_image: ../assets/dev/csharpCollections/csharpCollections.png
 canonical_url: null
 id: 1466278
+date: '2023-05-12T19:32:25Z'
 ---
 
 ## Preface
