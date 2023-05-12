@@ -1,6 +1,6 @@
 ---
 title: A quick tour of collections in C#
-published: false
+published: true
 description: 'A quick tour of collection in C#, including some of the reasons to use them'
 tags: 'csharp, dotnet, collections, beginner'
 cover_image: ../assets/dev/csharpCollections/csharpCollections.png
