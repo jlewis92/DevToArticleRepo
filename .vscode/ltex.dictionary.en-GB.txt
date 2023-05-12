@@ -68,3 +68,6 @@ GitBackup
 checkpointing
 appSettings
 json
+ICollection
+IList
+QuickWatch
