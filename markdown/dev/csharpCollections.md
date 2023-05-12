@@ -5,6 +5,7 @@ description: 'A quick tour of collection in C#, including some of the reasons to
 tags: 'csharp, dotnet, collections, beginner'
 cover_image: ../assets/dev/csharpCollections/csharpCollections.png
 canonical_url: null
+id: 1466278
 ---
 
 ## Preface
