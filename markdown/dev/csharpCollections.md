@@ -42,7 +42,7 @@ myCollection.Remove("item 1");
 myCollection.Clear();
 ```
 
-While finding data in a list isn't as extensive as a list, there's still a lot of ways you can find data in a list:
+While finding data in a collection isn't as extensive as a list, there's still a lot of ways you can find data in a collection:
 
 ```csharp
 // index based
