@@ -5,6 +5,7 @@ description: How to setupSvelte as a static website with login
 tags: 'svelte, auth0, typescript, beginner'
 cover_image: ../assets/dev/svelteStatic/staticSite.png
 canonical_url: null
+id: 1473276
 ---
 
 ## Preface
