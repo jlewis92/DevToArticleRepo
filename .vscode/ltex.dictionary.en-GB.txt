@@ -71,3 +71,11 @@ json
 ICollection
 IList
 QuickWatch
+pnpm
+npm
+Vercel
+prerendered
+daisyUI
+AutoPrefixer
+Okta
+Animista

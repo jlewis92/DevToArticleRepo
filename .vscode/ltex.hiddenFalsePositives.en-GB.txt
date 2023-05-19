@@ -66,3 +66,8 @@
 {"rule":"ADMIT_ENJOY_VB","sentence":"^\\QIn fact, it's generally recommended to provide collections to users rather than lists but reality this rarely happens as lists work in 99.99% of use cases.\\E$"}
 {"rule":"ADMIT_ENJOY_VB","sentence":"^\\QIn fact, it's generally recommended to provide collections to users rather than lists, but reality this rarely happens as lists work in 99.99% of use cases.\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QCollection namespace or a \"collection\" which can include essentially anything that can be described as \"a collection of objects\".\\E$"}
+{"rule":"LARGE_NUMBER_OF","sentence":"^\\QYou can see it just generates a large number of files in the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q folder.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QAt this point, if you run \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q you should see a \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q folder created that contains an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, which is the entry point for the static site:\\E$"}
+{"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example AWS has Amplify, Google has Firebase and Azure has identity platform.\\E$"}
+{"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example, AWS has Amplify, GCP has Firebase and Azure has Identity Platform.\\E$"}
+{"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example, AWS has Amplify, GCP has Firebase and Azure has Identity.\\E$"}
