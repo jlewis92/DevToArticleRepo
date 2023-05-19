@@ -3,7 +3,7 @@ title: How to setup a simple static website using Svelte (with login)
 published: false
 description: How to setupSvelte as a static website with login
 tags: 'svelte, auth0, typescript, beginner'
-cover_image: ../assets/dev/svelteStatic/staticSite.png
+cover_image: ../assets/dev/svelteStatic/staticSiteFront.png
 canonical_url: null
 ---
 
