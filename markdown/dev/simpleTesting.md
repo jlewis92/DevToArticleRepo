@@ -56,13 +56,13 @@ At this point we just hit next, and we get an option to name the project.  In C#
 
 At this point a project should be created a default test file and global using file containing NUnit:
 
-![Simple test project](../assets/dev/simpleTesting/Capture.PNG)
+![Simple test project](../assets/dev/simpleTesting/Capture.png)
 
 Now at this stage we *could* start writing tests, but in reality we normally abstract code out of `Program.cs` as much as possible because it's static and difficult to test. While we could just create some extra files with the `SimpleTestingApp` project, it's far more likely to create a separate project that contains most of the code.  In this case I'm going to create a `SimpleBankingApp` project.  Given I want to unit test all of my code, what I tend to do is try and group my test projects with my "real" code.  To do this, I right-click on the solution in Solution explorer and go to `add > New solution folder` and name the folder `SimpleBankingApp`.
 
 This is directory I'll create my new projects in, which in this case is a class library and a test project.  Once you've done this, your solution explorer should look something like this:
 
-![Solution explorer](../assets/dev/simpleTesting/solution.PNG)
+![Solution explorer](../assets/dev/simpleTesting/solution.png)
 
 As you can see, Visual Studio automatically changes the icon of the project based on what it is.
 
@@ -70,7 +70,7 @@ As you can see, Visual Studio automatically changes the icon of the project base
 
 So at this point I'm just going to write some code as this section isn't that important, it's testing that we're interested in.  For context, this is what my application looks like:
 
-![Simple banking app](../assets/dev/simpleTesting/bankingApp.PNG)
+![Simple banking app](../assets/dev/simpleTesting/bankingApp.png)
 
 and some of the more important classes:
 
