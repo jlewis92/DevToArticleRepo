@@ -6,6 +6,7 @@ tags: 'testing, csharp, dotnet, beginner'
 cover_image: ../assets/dev/simpleTesting/simpleTestingCover.png
 canonical_url: null
 id: 1482394
+date: '2023-05-26T21:31:24Z'
 ---
 
 **NOTE:** This article is an attempt to showcase how to set up testing in C#, and doesn't represent some "standard" practices observed when unit testing (such as TDD).  This is so the article can more easily explain the process in a way that flows easily.
