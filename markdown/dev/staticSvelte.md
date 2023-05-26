@@ -6,6 +6,7 @@ tags: 'svelte, auth0, typescript, beginner'
 cover_image: ../assets/dev/svelteStatic/staticSiteFront.png
 canonical_url: null
 id: 1473276
+date: '2023-05-19T11:57:51Z'
 ---
 
 ## Preface
