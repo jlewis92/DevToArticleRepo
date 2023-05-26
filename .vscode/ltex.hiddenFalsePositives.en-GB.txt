@@ -71,3 +71,6 @@
 {"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example AWS has Amplify, Google has Firebase and Azure has identity platform.\\E$"}
 {"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example, AWS has Amplify, GCP has Firebase and Azure has Identity Platform.\\E$"}
 {"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QFor example, AWS has Amplify, GCP has Firebase and Azure has Identity.\\E$"}
+{"rule":"WANT_TO_NN","sentence":"^\\QGiven I want to unit test all of my code, what I tend to do is try and group my test projects with my \"real\" code.\\E$"}
+{"rule":"PER_USER_BASIS_HYPHEN","sentence":"^\\QIf this was to change on a per test basis, I could either con\\E$"}
+{"rule":"PER_USER_BASIS_HYPHEN","sentence":"^\\QIf this was to change on a per test basis, I could either construct this object in the test itself, or use a setup method that's run before every test.\\E$"}
