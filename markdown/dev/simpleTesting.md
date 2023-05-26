@@ -1,7 +1,7 @@
 ---
-title: Setting up some simple testing with C#
-published: false
-description: How to setup a simple test project
+title: Setting up a simple testing project with C#
+published: true
+description: How to setup a simple test project in C# using Visual Studio
 tags: 'testing, csharp, dotnet, beginner'
 cover_image: ../assets/dev/simpleTesting/simpleTestingCover.png
 canonical_url: null
